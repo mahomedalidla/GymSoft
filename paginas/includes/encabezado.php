@@ -119,7 +119,11 @@
         </div>
       </div>
 
-      <!-- Sidebar Menu -->
+      <!-- Menu Empleados -->
+      
+
+
+      <!-- Sidebar Menu Producto-->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
@@ -144,6 +148,43 @@
             </a>
           </li>
 
+          <!-- Control de Acceso -->
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-qrcode"></i>
+              <p>
+                Control de Acceso
+              </p>
+            </a>
+          </li>
+
+
+          <!-- seccion Empleados -->
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-users"></i>
+              <p>
+                Empleados
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Ver Empleados</p>
+                </a> 
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Agregar Empleado</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          
+
           <li class="nav-item">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-truck-loading"></i>
@@ -157,7 +198,7 @@
                 <a href="productos.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Ver Prodctos</p>
-                </a>
+                </a> 
               </li>
               <li class="nav-item">
                 <a href="addproductos.php" class="nav-link">
