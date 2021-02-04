@@ -24,26 +24,21 @@
                 <label for="inputName">Nombre </label>
                 <input type="text" id="inputName" class="form-control">
               </div>
-              <div class="form-group">
-                <label for="inputDescription">Sexo</label>
-                <select id="inpudSex" class="form-control custom-select">
-                  <option selected disabled>Selecciona</option>
-                  <option>Masculino</option>
-                  <option>Femenino</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="inputStatus">Tipo de membresia</label>
-                <select id="inputStatus" class="form-control custom-select">
-                  <option selected disabled>Selecciona</option>
-                  <option>General</option>
-                  <option>Estudiante</option>
 
-                </select>
-              </div>
               <div class="form-group">
-                <label for="inputNacimiento">Fecha de nacimiento</label>
-                <input type="date" id="inputClientCompany" class="form-control">
+                <label for="inputCantidad">Cantidad </label>
+                <input type="number" id="inputCantidad" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <label for="inputPrecio">Precio </label>
+                <input type="number" id="inputPrecio" class="form-control">
+              </div>
+              
+              
+              <div class="form-group">
+                <label for="inputImg">Añadir imagen</label>
+                <input type="file" id="inputImg" class="form-control">
               </div>
 
             </div>
