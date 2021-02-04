@@ -15,7 +15,6 @@
             <div class="small-box bg-info">
               <div class="inner">
                 <h3>$150</h3>
-
                 <p>Ventas</p>
               </div>
               <div class="icon">
@@ -73,7 +72,7 @@
               <div class="card-header">
                 <h3 class="card-title">
                   <i class="ion ion-clipboard mr-1"></i>
-                  To Do List
+                  Lista de Tareas
                 </h3>
 
                 <div class="card-tools">
@@ -178,26 +177,30 @@
 
 
               <!-- /.card-body-->
-              <div class="card-footer bg-transparent">
-                <div class="row">
-                  <div class="col-4 text-center">
+              <!-- <div class="card-footer bg-transparent"> -->
+                <!-- <div class="row"> -->
+                  
+                  
+                  <!-- <div class="col-4 text-center"> -->
                     <div id="sparkline-1"></div>
+                  <!-- </div> -->
 
-                  </div>
                   <!-- ./col -->
-                  <div class="col-4 text-center">
+                  <!-- <div class="col-4 text-center"> -->
                     <div id="sparkline-2"></div>
+                 <!--  </div> -->
 
-                  </div>
                   <!-- ./col -->
-                  <div class="col-4 text-center">
+                  <!-- <div class="col-4 text-center"> -->
                     <div id="sparkline-3"></div>
+                  <!-- </div> -->
 
-                  </div>
+
+
                   <!-- ./col -->
-                </div>
+                <!-- </div> -->
                 <!-- /.row -->
-              </div>
+              <!-- </div> -->
             </div>
             <!-- /.card -->
 

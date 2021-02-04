@@ -28,3 +28,5 @@ para asi poder tomar las asistencias de la gente,
 
 
 Contorl de los gastos por dia, desde venta de cada cosa (toallas, agua, membresias)
+
+https://adminlte.io/docs/3.1/
