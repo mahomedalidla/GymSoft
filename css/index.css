@@ -6,15 +6,22 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-color: white;
+    --primary-color: #E08E79;
+    --secondary-color: #42929d;
+    --tertiary-color: #F4F4E1;
+    --fourth-color: #774F38;
+  }
+
 html {
     scroll-behavior: smooth;
 }
-
 /* ------------- CARRITO DE COMPRAS ----------------- */
 
 .carrito-boton {
     width: 40px;
-    background: #42929d;
+    background: var(--secondary-color);
     border: 3px solid white;
     border-radius: 50%;
     position: fixed;
@@ -27,7 +34,7 @@ html {
 }
 
 .carrito-boton:hover {
-    background: #E08E79;
+    background: var(--primary-color);
 }
 
 .carrito-fondo {
@@ -45,7 +52,7 @@ html {
 
 .carrito-ventana {
     width: 400px;
-    background: #42929d;
+    background: var(--secondary-color);
     border: 3px solid #21575e;
     padding: 10px;
 }
@@ -92,9 +99,9 @@ html {
 }
 
 .carrito-ventana .renglon .boton-quitar {
-    color: #42929d;
+    color: var(--secondary-color);
     font-family: "Balsamiq Sans", sans-serif;
-    background: #F4F4E1;
+    background: var(--tertiary-color);
     border: none;
     cursor: pointer;
     transition: background 0.5s;
@@ -102,7 +109,7 @@ html {
 }
 
 .carrito-ventana .renglon .boton-quitar:hover {
-    background: #E08E79;
+    background: var(--primary-color);
     color: white;
 }
 
@@ -111,8 +118,8 @@ html {
 }
 
 .carrito-ventana .boton-compra:hover {
-    background: #F4F4E1;
-    color: #42929D;
+    background: var(--tertiary-color);
+    color: var(--secondary-color);
 }
 
 
@@ -122,7 +129,7 @@ html {
 .nav-contenedor {
     width: 100%;
     position: sticky;
-    background: #E08E79;    
+    background: var(--primary-color);    
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     top: 0;
     z-index: 10;
@@ -159,7 +166,7 @@ nav {
 }
 
 #menu-boton:hover {
-    color: #774F38;
+    color: var(--fourth-color);
 }
 
 #menu { 
@@ -178,7 +185,7 @@ nav {
 }
 
 #menu li a:hover {
-    color: #774F38;    
+    color: var(--fourth-color);    
 }
 
 #menu li a {
@@ -193,7 +200,8 @@ nav {
 /* ------------- SECCIÓN INICIO ----------------- */
 
 .seccion-inicio {
-    background-image: url("../imagenes/fondo.png");
+    /* background-image: url("../imagenes/fondo.png"); */
+    background: var(--bg-color);
     min-height: 95vh;
     padding: 5%;    
     display: grid;
@@ -203,7 +211,7 @@ nav {
 }
 
 .tarjeta-inicio {
-    background: #F4F4E1;
+    background: var(--tertiary-color);
     border: 5px solid #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
     padding: 3%;
@@ -215,14 +223,14 @@ nav {
 
 .tarjeta-inicio h1 {
     font-family: Pacifico;
-    color: #774F38;
+    color: var(--fourth-color);
     font-size: 3rem;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
 }
 
 .tarjeta-inicio h1 span {
-    color: #42929D;
+    color: var(--secondary-color);
 }
 
 .tarjeta-inicio p {
@@ -232,7 +240,7 @@ nav {
 }
 
 .boton {
-    background: #E08E79;
+    background: var(--primary-color);
     font-family: "Montserrat Alternates", serif;
     font-size: 1.2rem;
     color: white;
@@ -254,7 +262,7 @@ a.boton {
 }
 
 .boton:hover {
-    background: #42929D;
+    background: var(--secondary-color);
 }
 
 .img-contenedor {
@@ -312,7 +320,7 @@ a.boton {
 /* ------------- SECCIÓN CATEGORIAS ----------------- */
 
 .seccion-categorias {
-    background: #F4F4E1;
+    background: var(--tertiary-color);
 }
 
 .contenedor-tarjetas {
@@ -339,7 +347,7 @@ a.boton {
 .categoria-titulo {
     font-family: "Patua One", serif;
     text-align: center;
-    color: #774F38;
+    color: var(--fourth-color);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 2rem;
     padding: 0.8rem;
@@ -355,7 +363,7 @@ a.boton {
 }
 
 .categoria-tarjeta h2 {
-    color: #42929D;
+    color: var(--secondary-color);
     font-family: "Patua One", serif;
     padding: 10vh 0 2vh 0; 
 }
@@ -379,7 +387,7 @@ a.boton {
 }
 
 .categoria-tarjeta button:hover {
-    background: #42929D;
+    background: var(--secondary-color);
 }
 
 /* ------------- FIN SECCIÓN CATEGORIAS ----------------- */
@@ -396,7 +404,7 @@ a.boton {
     font-family: "Montserrat Alternates", serif;
     width: 90%;
     margin: auto;
-    background: #F4F4E1;
+    background: var(--tertiary-color);
     border: 5px solid #FFFFFF;
     display: flex;
     flex-wrap: wrap;
@@ -415,7 +423,7 @@ a.boton {
 
 .direccion-datos {
     flex: 1 1 300px;
-    color: #774F38;
+    color: var(--fourth-color);
     padding: 2vw;
     display: flex;
     flex-direction: column;
@@ -433,7 +441,7 @@ a.boton {
 /* ------------- PIE DE PÁGINA ----------------- */
 
 footer {
-    background: #42929D;
+    background: var(--secondary-color);
     color: white;
     font-family: "Montserrat Alternates", serif;
     font-size: 1rem;
@@ -470,7 +478,7 @@ footer .derechos {
     }
     
     #menu {
-        background: #42929D;    
+        background: var(--secondary-color);    
         font-family: "Montserrat Alternates", serif;
         list-style: none;
         color: white;
