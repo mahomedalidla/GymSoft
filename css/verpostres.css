@@ -1,4 +1,12 @@
 
+:root {
+    --bg-color: white;
+    --primary-color: #E08E79;
+    --secondary-color: #42929d;
+    --tertiary-color: #F4F4E1;
+    --fourth-color: #774F38;
+  }
+
 .verpostres {
     background: #f4f4e1;
     padding: 3% 5% 3% 5%;

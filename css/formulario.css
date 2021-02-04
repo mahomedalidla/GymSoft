@@ -1,6 +1,14 @@
+:root {
+    --bg-color: white;
+    --primary-color: #E08E79;
+    --secondary-color: #42929d;
+    --tertiary-color: #F4F4E1;
+    --fourth-color: #774F38;
+  }
 
 .formulario-div {
-    background-image: url(../imagenes/fondo.png);
+    /* background-image: url(../imagenes/fondo.png); */
+    background: var(--bg-color);
     min-height: 80vh;
     display: grid;
     place-items: center;

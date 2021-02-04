@@ -9,7 +9,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Respostería Dulce Vida</title>
+    <title>Muscle Crew</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Pacifico&family=Patua+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/formulario.css">
@@ -30,23 +30,7 @@
             </div>
 
             <div class="productos">
-                <div class="renglon">
-                    <p class="postre">Pastel de chocolate</p>
-                    <p class="precio">$ 400.00</p>
-                    <button class="boton-quitar">Quitar</button>
-                </div>
-
-                <div class="renglon">
-                    <p class="postre">Pastel de Limon</p>
-                    <p class="precio">$ 300.00</p>
-                    <button class="boton-quitar">Quitar</button>
-                </div>
-
-                <div class="renglon">
-                    <p class="postre">Pastel de Vainilla</p>
-                    <p class="precio">$ 420.00</p>
-                    <button class="boton-quitar">Quitar</button>
-                </div>
+                
             </div>
 
             <div class="total">
