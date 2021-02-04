@@ -20,7 +20,7 @@ function conectar () {
     DEFINE('SERVIDOR', 'localhost');
     DEFINE('USUARIO', 'root');
     DEFINE('PASSWORD', '');
-    DEFINE('BD', 'gymsoft');
+    DEFINE('BD', 'pasteleria');
 
     $resultado = mysqli_connect(SERVIDOR, USUARIO, PASSWORD, BD);
     
