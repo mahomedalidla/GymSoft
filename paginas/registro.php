@@ -1,55 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repostería Dulce Vida</title>
-</head>
-<body>
-    <nav>
-        <img src="../imagenes/cake.png" alt="">
-        <h2>Dulce Vida</h2>
-        <ul>
-            <li>Inicio</li>
-            <li>Postres</li>
-            <li>Dirección</li>
-            <li>Ingresar</li>
-            <li>Crear Cuenta</li>            
-        </ul>
-    </nav>
-    <main>
-        
-        <form action="#" method="post">
-            <h2>Entrada</h2>
-            <input type="text" placeholder="Nombre">
-            <input type="text" placeholder="Apellidos">
-            <input type="email" placeholder="Correo">
-            <input type="email" placeholder="Confirmar correo">
-            <input type="password" placeholder="Contraseña">
-            <input type="password" placeholder="Confirmar Contraseña">
-            <input type="checkbox">
-            <p>Recibir ofertas por correo.</p>
-            <input type="checkbox">
-            <p>Aceptos los términos del servicio.</p>            
-            <input type="submit" value="Entrar">            
-            <input type="reset" value="Borrar">            
-        </form>
-        
-    </main>
+<!-- idsocio 	nombreSocio 	fotoSocio 	sexo 	tipoMembresia 	telefono 	fechaNacimiento -->
 
-    <!-- Inicio Pie de página -->
-    <footer>
-        <h4>Contacto</h4>
-        <p>Teléfono: 311 322 4598</p>
-        <p>correo: contacto@dulcevida.com</p>
-        <h4>Síguenos</h4>
-        <p>Facebook</p>
-        <p>Instagram</p>
-        <p>Preguntas frecuentes</p>
-        <p>Políticas del sitio</p>
-        <p>Términos y condiciones</p>
-        <p>&copy;Todos los derechos reservados. Repostería Dulce Vida 2020</p>
-    </footer>
-    <!-- Fin Pie de página -->        
-</body>
-</html>
+<?php
+    include('includes/encabezado.php');
+?>
+
+<script src="../scripts/formulario-postre.js" defer> </script>
+
+    <main>   
+        
+    <div class="formulario-div">
+        <form action="agregar-registro.php" method="post" enctype="multipart/form-data">
+            <h2>Registro</h2>
+
+            <label for="Nombre">Nombre</label>
+            <input type="text" placeholder="Nombre" id="nombre" name="nombre">
+
+            <label for="imagen">Imagen</label>
+            <input type="file" id="imagen" name="imagen">
+
+            <label for="sexo">Sexo</label>
+            <select name="sexo" id="sexo">
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+            </select>
+
+            <label for="membresia">Tipo de Membresia</label>
+            <select name="membresia" id="membresia">
+                <option value="General">General</option>
+                <option value="Estudiante">Estudiante</option>
+            </select>
+
+            <label for="telefono">Telefono</label>
+            <input type="text" id="telefono" name="telefono" placeholder="3113001707">
+
+            <label for="fechaN">Fecha de nacimiento</label>
+            <input type="date" id="fechaN" name="fechaN">
+            
+            <hr>
+
+            <!-- <div class="parrafo-terminos">
+                <input type="checkbox">
+                <p>Recibir ofertas por correo.</p>
+
+                <input type="checkbox">
+                <p>Aceptos los términos del servicio.</p>              
+            </div>  -->
+
+                <input type="submit" value="Registrar" class="boton" style="margin: 10px;">            
+                <input type="reset" value="Borrar" class="boton" style="margin: 10px;">
+
+        </form>
+        </div>    
+    </main>
+    <?php
+        include('includes/pie.php');
+    ?>

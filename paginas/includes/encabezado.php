@@ -1,6 +1,8 @@
 <?php
+    
     if (session_status() == PHP_SESSION_NONE) {
         session_start();
+        /* $usuario = $_SESSION['username']; */
     }
 ?>
 
@@ -61,10 +63,12 @@
                     if (isset($_SESSION['usuario'])) {
                         echo '<li><a href="salir.php">salir</a></li>';
                         echo '<li><a href="agregar.php">Agregar postre</a></li>'; 
+                        echo '<li><a href="registro.php">Crear Cuenta</a></li>';
+                       /*  echo '<li><a href="registro.php">Bienvenido' . "$usuario". '</a></li>'; */
                     }
                     else {
                         echo '<li><a href="entrada.php">Ingresar</a></li>';
-                        echo '<li><a href="#">Crear Cuenta</a></li>';  
+                          
                     }
                 ?>
           

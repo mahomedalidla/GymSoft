@@ -20,7 +20,7 @@ function conectar () {
     DEFINE('SERVIDOR', 'localhost');
     DEFINE('USUARIO', 'root');
     DEFINE('PASSWORD', '');
-    DEFINE('BD', 'pasteleria');
+    DEFINE('BD', 'gymsoft');
 
     $resultado = mysqli_connect(SERVIDOR, USUARIO, PASSWORD, BD);
     
@@ -52,13 +52,13 @@ function subir_imagen ($archivo) {
         echo 'Ocurrio un error al cargar la imagen';
         return null;
     }
-    else if ($tama > 2000000) {
+    else if ($tama > 10000000) {
         echo 'El tamaño de la imagen exede 2MB';
         return null;
     }
     else {
         $nombre_nuevo = uniqid('',true) . '.' . $extension;
-        $destino = "../galeria/" . $nombre_nuevo;
+        $destino = "../img-uploaded/" . $nombre_nuevo;
         move_uploaded_file($origen, $destino);
 
         return $destino;

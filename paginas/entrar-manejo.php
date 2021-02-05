@@ -1,6 +1,15 @@
 <?php
 
     include('includes/utileria.php');
+
+    /* include('includes/login.php'); */
+
+    
+
+
+
+    
+    ////////////////////////////////////////////
     //Sacamos los valores
     $usuario = $_POST['usuario'];
     $password = $_POST['password'];
@@ -9,7 +18,7 @@
         redireccionar('Bienvenido Administrador', 'index.php');
         $_SESSION['usuario'] = 'Administrador';
     }
-    else {
+    else { 
         redireccionar('Datos Incorrectos', 'entrada.php');
     }
 
