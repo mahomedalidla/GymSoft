@@ -22,7 +22,8 @@
 </head>
 <body>
 
-    <img src="../imagenes/cart.png" alt="" class="carrito-boton">
+    <!-- Carrito de compras -->
+    <!-- <img src="../imagenes/cart.png" alt="" class="carrito-boton">
     <div class="carrito-fondo">
         <div class="carrito-ventana">
             <p class="titulo">Carrito de Compras</p>
@@ -44,7 +45,7 @@
 
             <button class="boton boton-compra">Realizar compra</button>
         </div>
-    </div>
+    </div> -->
 
     <!-- Navegación del la página -->
     <div class="nav-contenedor">
