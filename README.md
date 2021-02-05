@@ -1,4 +1,4 @@
-# GymSoft
+# GymSoft 
 seccion de socios,
 en donde se pueda añadir, editar y eliminar nuevos socios
 y se muestre en tabla los socios qcon los que se cuenta

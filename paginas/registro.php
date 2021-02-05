@@ -10,7 +10,7 @@
         
     <div class="formulario-div">
         <form action="agregar-registro.php" method="post" enctype="multipart/form-data">
-            <h2>Registro</h2>
+            <h2>Registro de Socio</h2>
 
             <label for="Nombre">Nombre</label>
             <input type="text" placeholder="Nombre" id="nombre" name="nombre">
