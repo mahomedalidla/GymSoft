@@ -21,11 +21,8 @@ y esa sea la manera de controlar su ingreso <<Asi mismo que
 cuando este por vencerse o ya este vencido salga una
 alerta>>)---*
 
-*******una seccion en la que los grupos de perosnas se vena como en la imagen de ejemplo
+*******una seccion en la que los grupos de perosnas se vea como en la imagen de ejemplo
 para asi poder tomar las asistencias de la gente,
 (Tipo cine--ver imgEjemplo.jpg).
 
-
-
 Contorl de los gastos por dia, desde venta de cada cosa (toallas, agua, membresias)
-
