@@ -32,6 +32,11 @@
 
     $fechaActual = date('Y-m-d');
 
+    /* Obteniendo fecha del sig mes */
+    $fechaFin = new DateTime();
+    $fechaFin->modify( 'next month' );
+    echo $fechaFin->format( 'Y-m-d' );    
+
     $sql = "insert into socios(nombreSocio, fotoSocio, sexo, tipoMembresia, telefono, fechaNacimiento, fechaInicio) 
     values ('$nombre', '$imagen', '$sexo', '$membresia', '$telefono', '$fechaN', '$fechaActual')";
 
