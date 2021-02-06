@@ -38,7 +38,7 @@
     $resultado = mysqli_query($conexion, $sql);
 
     if ($resultado) {
-        redireccionar('Datos guardados', 'registro.php');
+        redireccionar('Datos guardados', 'registroSocio.php');
     }
     else {
         redireccionar('Error: ' . mysqli_error($conexion), 'registro.php');

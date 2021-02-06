@@ -22,31 +22,6 @@
 </head>
 <body>
 
-    <!-- Carrito de compras -->
-    <!-- <img src="../imagenes/cart.png" alt="" class="carrito-boton">
-    <div class="carrito-fondo">
-        <div class="carrito-ventana">
-            <p class="titulo">Carrito de Compras</p>
-            <div class="encabezado-detalle">
-                <p class="columna-producto">Producto</p>
-                <p class="columna-precio">Precio</p>
-            </div>
-
-            <div class="productos">
-                
-            </div>
-
-            <div class="total">
-                <p>Total</p>
-                <p class="precio-total">1500.00</p>
-
-                
-            </div>
-
-            <button class="boton boton-compra">Realizar compra</button>
-        </div>
-    </div> -->
-
     <!-- Navegación del la página -->
     <div class="nav-contenedor">
         <nav>
@@ -65,7 +40,7 @@
                         $usuario = $_SESSION['usuario'];
                         /* echo '<li><a href="agregar.php">Agregar postre</a></li>';  */
 
-                        echo '<li><a href="registro.php">Añadir Socio</a></li>';
+                        echo '<li><a href="registroSocio.php">Añadir Socio</a></li>';
                         echo '<li><a href="#">Socios</a></li>';
 
                         echo '<li><a href="#">Añadir Proveedor</a></li>';
