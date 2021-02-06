@@ -30,12 +30,26 @@
 
     $imagen = subir_imagen($_FILES['imagen']);
 
+    /* Obteniendo fecha actual con funcion date */
     $fechaActual = date('Y-m-d');
 
     /* Obteniendo fecha del sig mes */
     $fechaFin = new DateTime();
     $fechaFin->modify( 'next month' );
-    echo $fechaFin->format( 'Y-m-d' );    
+    echo $fechaFin->format( 'Y-m-d' );
+
+    /* Comparacion de fechas, aun no funciona, falta convertir fechas a strtotime */
+    $fecha_actual = strtotime(date("d-m-Y H:i:00",time()));
+    $fecha_entrada = strtotime("19-11-2022 21:00:00");
+
+    if($fecha_actual > $fecha_entrada)
+	{
+	    echo "La fecha actual es mayor a la comparada.";
+	}else
+		{
+		    echo "La fecha comparada es igual o menor";
+		}
+    /* /fin comparacion de fechas */
 
     $sql = "insert into socios(nombreSocio, fotoSocio, sexo, tipoMembresia, telefono, fechaNacimiento, fechaInicio) 
     values ('$nombre', '$imagen', '$sexo', '$membresia', '$telefono', '$fechaN', '$fechaActual')";
