@@ -1,9 +1,4 @@
-<?php
-    if (session_status() == PHP_SESSION_NONE) {
-        session_start();
-        /* $usuario = $_SESSION['username']; */
-    }
-?>
+
 
 <?php include('includes/encabezado.php');?>
 

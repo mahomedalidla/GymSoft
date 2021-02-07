@@ -2,7 +2,6 @@
 
 <?php
     include('includes/encabezado.php');
-    include('includes/menu-navegacion.php');?>
 ?>
 
 <script src="../scripts/formulario-postre.js" defer> </script>
