@@ -1,5 +1,3 @@
-</main>
-
 <!-- Inicio Pie de página -->
 <footer>
     <div class="columnas-pie">
@@ -23,5 +21,3 @@
 </footer>
 <!-- Fin Pie de página -->
 
-</body>
-</html>

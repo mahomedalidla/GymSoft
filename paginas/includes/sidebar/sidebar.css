@@ -1,0 +1,87 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+#logo-img{
+   /* border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding-bottom: 7px;
+    vertical-align: middle;*/
+    width: 3rem;
+    height: 3rem;
+}
+
+#logo-panel{
+    padding-bottom: 16px;
+    padding-left: 15px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 70px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 20px;
+    white-space: nowrap;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 22px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.0s;
+}
+
+#divisor{
+    background-color: #999;
+    height: 0.05px;
+    border-color: #000;
+    transition: 0.5s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+.icon-text{
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.material-icons,
+.icon-text {
+    vertical-align: middle;
+}
+
+.material-icons {
+    padding-bottom: 3px;
+}
+
+#main {
+    transition: margin-left .4s;
+    padding: 16px;
+    margin-left: 100px;
+}
+
+#sidebar-toggle{
+    visibility: hidden;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        width: 0px;
+    }
+
+    #sidebar-toggle{
+        visibility: visible;
+    }
+
+}
