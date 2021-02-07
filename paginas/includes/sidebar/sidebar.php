@@ -27,6 +27,5 @@
     <a href="#">
     	<i class="material-icons">admin_panel_settings</i>
     	<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Control de acceso</span>
-    </a>    
-    
+    </a>       
 </div>
