@@ -1,5 +1,4 @@
 
-
 <?php include('includes/encabezado.php');?>
 
             <!--Sección de inicio-->

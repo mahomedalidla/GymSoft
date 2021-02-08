@@ -1,0 +1,61 @@
+body{
+	font-family: "Lato", sans-serif;	
+	background-color: #DDD;
+}
+
+img{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	padding-top: 4px;
+}
+
+th {
+ 	padding: 0px 15px 15px 15px;
+ 	font-size: 18px;
+ 	text-align: left;
+}
+
+td{
+	padding: 10px 10px 10px 10px;
+	text-align: left;
+	font-size: 16px;
+	color: #444;
+	font-weight: lighter;
+}
+
+/*tr:nth-of-type(odd) { 
+	background: #eee; 
+}*/
+
+table{
+	border: 1px solid;
+	border-radius: 10px;
+	border-color: white;
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+button{
+	border-radius: 3px;
+}
+
+.edit-button{
+	color: #61b8ff;
+	padding: 5px;
+}
+
+.delete-button{
+	color: #ff6161;
+	padding: 5px;
+}
+
+/*.edit-button, .delete-button{
+	display: none;
+}
+
+table:hover + .edit-button{
+	display: block;
+}*/
+
