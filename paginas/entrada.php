@@ -12,8 +12,9 @@
 ?>
 
 <div class="formulario-div">
+<h3>Datos</h3>
     <form action="entrar-manejo.php" method="post">
-        <h3>Datos</h3>
+        
 
         <label for="usuario">Usuario</label>
         <input type="text" name="usuario" id="usuario">
@@ -22,6 +23,7 @@
         <input type="password" name="password" id="password">
 
         <input type="submit" value="Entrar" class="boton">
+      
     </form>
 </div>
 

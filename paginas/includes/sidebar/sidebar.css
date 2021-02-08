@@ -29,6 +29,7 @@ body {
     transition: 0.4s;
     padding-top: 20px;
     white-space: nowrap;
+    box-shadow: 0 0 5px gray;
 }
 
 .sidebar a {

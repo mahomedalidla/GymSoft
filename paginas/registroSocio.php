@@ -9,34 +9,37 @@
     <main>   
         
     <div class="formulario-div">
-        <form action="agregar-registro.php" method="post" enctype="multipart/form-data">
+        <div class="header-form">
             <h2>Registro de Socio</h2>
+        </div> 
+        <form action="agregar-registro.php" method="post" enctype="multipart/form-data">
+            
 
-            <label for="Nombre">Nombre</label>
+            <label for="Nombre" id="lbNombre">Nombre:</label>
             <input type="text" placeholder="Nombre" id="nombre" name="nombre">
 
-            <label for="imagen">Imagen</label>
-            <input type="file" id="imagen" name="imagen">
+            <label for="telefono">Telefono:</label>
+            <input type="text" id="telefono" name="telefono" placeholder="3113001707">
 
-            <label for="sexo">Sexo</label>
+            <label for="sexo">Sexo:</label>
             <select name="sexo" id="sexo">
                 <option value="Masculino">Masculino</option>
                 <option value="Femenino">Femenino</option>
             </select>
 
-            <label for="membresia">Tipo de Membresia</label>
+            
+            <label for="membresia">Tipo de Membresia:</label>
             <select name="membresia" id="membresia">
                 <option value="General">General</option>
                 <option value="Estudiante">Estudiante</option>
             </select>
 
-            <label for="telefono">Telefono</label>
-            <input type="text" id="telefono" name="telefono" placeholder="3113001707">
-
-            <label for="fechaN">Fecha de nacimiento</label>
-            <input type="date" id="fechaN" name="fechaN">
             
-            <hr>
+            <label for="fechaN">Fecha de nacimiento:</label>
+            <input type="date" id="fechaN" name="fechaN">
+
+            <label for="imagen">Imagen:</label>
+            <input type="file" id="imagen" name="imagen">
 
             <!-- <div class="parrafo-terminos">
                 <input type="checkbox">
