@@ -24,9 +24,9 @@
 					<img src="perrito.jpg">
 				</td>
 				<td class = "table-name">Juan</td>
-				<td class = "table-phone">8</td>
+				<td class = "table-phone">888-888-888</td>
 				<td class = "table-member">La más perrona</td>
-				<td class = "table-exp">Mañana</td>
+				<td class = "table-exp">21 de noviembre</td>
 				<td class = "table-buttons">
 					<a href="" class = "edit-button">Editar</a>
 					<a href="" class = "delete-button">Eliminar</a>
@@ -37,9 +37,9 @@
 					<img src="perrito.jpg">
 				</td>
 				<td class = "table-name">Juan</td>
-				<td class = "table-phone">8</td>
+				<td class = "table-phone">888-888-888</td>
 				<td class = "table-member">La más perrona</td>
-				<td class = "table-exp">Mañana</td>
+				<td class = "table-exp">21 de noviembre</td>
 				<td class = "table-buttons">
 					<a href="" class = "edit-button">Editar</a>
 					<a href="" class = "delete-button">Eliminar</a>
@@ -50,9 +50,22 @@
 					<img src="perrito.jpg">
 				</td>
 				<td class = "table-name">Juan</td>
-				<td class = "table-phone">8</td>
+				<td class = "table-phone">888-888-888</td>
 				<td class = "table-member">La más perrona</td>
-				<td class = "table-exp">Mañana</td>
+				<td class = "table-exp">21 de noviembre</td>
+				<td class = "table-buttons">
+					<a href="" class = "edit-button">Editar</a>
+					<a href="" class = "delete-button">Eliminar</a>
+				</td> 
+			</tr>
+			<tr>
+				<td class = "table-img">
+					<img src="perrito.jpg">
+				</td>
+				<td class = "table-name">Juan</td>
+				<td class = "table-phone">888-888-888</td>
+				<td class = "table-member">La más perrona</td>
+				<td class = "table-exp">21 de noviembre</td>
 				<td class = "table-buttons">
 					<a href="" class = "edit-button">Editar</a>
 					<a href="" class = "delete-button">Eliminar</a>
