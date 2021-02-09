@@ -15,9 +15,12 @@
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/formulario.css">
     <link rel="stylesheet" href="../css/verpostres.css">
+    <link rel="stylesheet" href="../css/versocios.css">
     <link rel="stylesheet" type="text/css" href="includes/sidebar/sidebar.css">
     <script type="text/javascript" src="includes/sidebar/sidebar.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link href="includes/tabla/tabla-socios.css" rel="stylesheet" type="text/css" />
     
     <script src="../scripts/menu.js" defer></script>  
     <script src="../scripts/carrito.js" defer></script>

@@ -35,7 +35,7 @@
 							</a><br>';
 
 							echo
-							'<a href="#">
+							'<a href="ver-socios.php">
 								<i class="material-icons">people</i>
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Socios</span>
 							</a><br>';
@@ -54,7 +54,13 @@
                             echo '<a href="#">
 								<i class="material-icons">admin_panel_settings</i>
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Control de acceso</span>
-							</a> <br> ';                          
+							</a> <br> ';  
+							
+							echo '<a href="#">
+								<i class="material-icons">monetization_on</i>
+								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Control de gastos</span>
+							</a> <br> ';  
+							
                         }
                         else {
 							echo

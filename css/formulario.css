@@ -12,7 +12,7 @@
 .formulario-div {
     /* background-image: url(../imagenes/fondo.png); */
     background: var(--bg-color);
-    background: white;
+    background: rgb(243, 243, 243);
     min-height: 80vh;
     display: grid;
     place-items: center;
