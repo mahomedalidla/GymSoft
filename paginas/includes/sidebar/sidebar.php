@@ -20,43 +20,49 @@
 							'<a href="index.php">
 								<i class="material-icons">person</i>
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;'."$usuario".'</span>
-							</a><br>';
+							</a><br>
 							
-							echo 
-							'<a href="salir.php">
+							<a href="salir.php">
 								<i class="material-icons">logout</i>
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Salir</span>
-							</a><br><hr><br>';
-
-							echo 
-							'<a href="registroSocio.php">
+							</a><br><hr><br>
+							
+							<a href="registro-socio.php">
 								<i class="material-icons">person_add</i>
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Añadir socio</span>
-							</a><br>';
-
-							echo
-							'<a href="ver-socios.php">
+							</a><br>
+							
+							<a href="ver-socios.php">
 								<i class="material-icons">people</i>
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Socios</span>
-							</a><br>';
-
-							echo '<a href="#">
+							</a><br>
+							
+							<a href="#">
 								<i class="material-icons">work</i>
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Añadir proveedor</span>
-							</a> <br> ';
-
-							echo '<a href="#">
+							</a> <br> 
+							
+							<a href="#">
 								<i class="material-icons">contacts</i>
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Ver proveedor</span>
-							</a> <br> ';
+							</a> <br> 
 
-                            
-                            echo '<a href="#">
+							<a href="#">
+								<i class="material-icons">local_shipping</i>
+								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Añadir productos</span>
+							</a> <br> 
+							
+							<a href="#">
+								<i class="material-icons">shopping_basket</i>
+								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Ver productos</span>
+							</a> <br> 
+							
+							<a href="#">
 								<i class="material-icons">admin_panel_settings</i>
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Control de acceso</span>
-							</a> <br> ';  
+							</a> <br> 
 							
-							echo '<a href="#">
+							<a href="#">
 								<i class="material-icons">monetization_on</i>
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Control de gastos</span>
 							</a> <br> ';  
@@ -67,10 +73,9 @@
 							'<a href="index.php">
 								<i class="material-icons">home</i>
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Inicio</span>
-							</a><br>';
-
-							echo
-							'<a href="entrada.php">
+							</a><br>
+							
+							<a href="entrada.php">
 								<i class="material-icons">login</i>
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Ingresar</span>
 							</a><br>';

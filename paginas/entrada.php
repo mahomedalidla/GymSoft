@@ -2,6 +2,7 @@
 
     include('includes/utileria.php');
 
+    // 
     session_start();
     
     if (isset($_SESSION['usuario'])) {

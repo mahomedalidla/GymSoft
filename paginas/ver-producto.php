@@ -1,6 +1,7 @@
 <?php
     include('includes/utileria.php');
-
+?>
+<?php
     if (session_status() == PHP_SESSION_NONE) {
         session_start();
     }
@@ -11,10 +12,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Socios - Muscle Crew</title>
+    <title>Muscle Crew</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Pacifico&family=Patua+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/formulario.css">
+    <link rel="stylesheet" href="../css/verpostres.css">
     <link rel="stylesheet" href="../css/versocios.css">
     <link rel="stylesheet" type="text/css" href="includes/sidebar/sidebar.css">
     <script type="text/javascript" src="includes/sidebar/sidebar.js"></script>
@@ -65,7 +67,7 @@
     
     <?php
         
-        include('includes/tabla/tabla-socios.php');
+        include('includes/tabla/tabla-productos.php');
 
     ?> 
     
