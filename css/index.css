@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@700&family=Montserrat:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
 
 :root {
     --bg-color: white;
-    --primary-color: #A368FC;
-    --secondary-color: #0C6B58;
-    --tertiary-color: #D9E2EC;
+    --primary-color: #535353;
+    --secondary-color: #cacaca;
+    --tertiary-color: #a7a7a7;
     --fourth-color: #486581;
   }
 
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    background-color: rgb(243, 243, 243);
+    background-color: #1E9B50;
 }
 /* ------------- CARRITO DE COMPRAS ----------------- */
 
@@ -136,11 +136,13 @@ body {
     width: 100%;
     position: sticky;
     color: black;
-    background: rgba(255, 255, 255, 0.521);    
- /*     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25); */
+    background: rgb(255, 255, 255);    
     top: 0;
     z-index: 10;
-    border-bottom: 0.5px solid gray;
+
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    padding: 1%;
 }
 
 nav {
@@ -150,6 +152,20 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+}
+
+.hola {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: x-large;
+}
+
+.usuario {
+    color: black;
+    font-family: "Alef", sans-serif;
+    font-size: x-large;
 }
 
 .logo {
@@ -213,7 +229,7 @@ nav {
 
 .seccion-inicio {
     /* background-image: url("../imagenes/fondo.png"); */
-    background: rgb(243, 243, 243);
+    background: rgb(255, 255, 255);
     min-height: 95vh;
     padding: 5%;    
     display: grid;
@@ -234,7 +250,8 @@ nav {
 }
 
 .tarjeta-inicio h1 {
-    font-family: "Montserrat", serif;
+    font-family: "IBM Plex Sans", serif;
+    font-size: xx-large;
     color: var(--fourth-color);
     font-size: 3rem;
     text-align: center;

@@ -16,7 +16,7 @@
     $fechaN =validar ($_POST['fechaN']);
 
     if ($nombre == '' || $sexo == '' || $membresia == '' || $telefono == '') {
-        redireccionar('Error en la conexion', 'registro.php');
+        redireccionar('Error en la conexion', 'registro-socio.php');
         return;
     }
 
@@ -24,7 +24,7 @@
     $conexion = conectar();
 
     if (!$conexion) {
-        redireccionar('Error en la conexion', 'registro.php');
+        redireccionar('Error en la conexion', 'registro-socio.php');
         return;
     }
 
@@ -44,10 +44,10 @@
     $resultado = mysqli_query($conexion, $sql);
 
     if ($resultado) {
-        redireccionar('Datos guardados', 'registroSocio.php');
+        redireccionar('Datos guardados', 'registro-socio.php');
     }
     else {
-        redireccionar('Error: ' . mysqli_error($conexion), 'registro.php');
+        redireccionar('Error: ' . mysqli_error($conexion), 'registro-socio.php');
     }
 
     mysqli_close($conexion); 

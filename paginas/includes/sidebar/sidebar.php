@@ -8,7 +8,7 @@
 <div id="sidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
 	<a href="index.php" id = "logo-panel">
     	<img src="../imagenes/logo.png" alt="Logo" id="logo-img">
-    	<span id="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Muscle Crew</span>
+    	<span id="icon-text">&nbsp;&nbsp;Muscle Crew</span>
     </a><hr id = "divisor"><br>
 
 	<!-- Implementacion de menu dinamico en sidebar -->

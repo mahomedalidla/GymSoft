@@ -5,7 +5,7 @@ function redireccionar ($mensaje, $dir) {
     echo '<div class="formulario-div" style="color:brown">';
     echo '<h1 style="text-align:center">' . $mensaje . '</h1>';
     echo '<h4 style="text-align:center"> Redireccionando...</h4>';
-    include('includes/pie.php');
+    // include('includes/pie.php');
     header('refresh:1,url='. $dir);
 }
 

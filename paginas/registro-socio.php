@@ -11,12 +11,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muscle Crew</title>
+    <title>Muscle Crew - Registrar socio</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Pacifico&family=Patua+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/formulario.css">
-    <link rel="stylesheet" href="../css/verpostres.css">
-    <link rel="stylesheet" href="../css/versocios.css">
     <link rel="stylesheet" type="text/css" href="includes/sidebar/sidebar.css">
     <script type="text/javascript" src="includes/sidebar/sidebar.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -41,15 +39,12 @@
                     <?php 
                         if (isset($_SESSION['usuario'])) {
                             $usuario = $_SESSION['usuario'];
-                            
-                            echo '<li><a href="#">Bienvenido ' . "$usuario". '</a></li>';
 
                             echo '<li><a href="index.php">Inicio</a></li>';
                             
                         }
                         else {
-                            echo '';
-                              
+                            echo ''; 
                         }
                     ?>
               
@@ -58,13 +53,11 @@
         </div>
         <!-- Fin navegación -->
 
-<script src="../scripts/formulario-postre.js" defer> </script>
-
     <main>   
         
     <div class="formulario-div">
         <div class="header-form">
-            <h2>Registro de Socio</h2>
+            <h2><b>Añadir Socio</b></h2>
         </div> 
         <form action="agregar-registro.php" method="post" enctype="multipart/form-data">
             
@@ -73,7 +66,7 @@
             <input type="text" placeholder="Nombre" id="nombre" name="nombre">
 
             <label for="telefono">Telefono:</label>
-            <input type="text" id="telefono" name="telefono" placeholder="3113001707">
+            <input type="text" id="telefono" name="telefono" placeholder="+XXX XXX XX XX">
 
             <label for="sexo">Sexo:</label>
             <select name="sexo" id="sexo">
@@ -94,14 +87,6 @@
 
             <label for="imagen">Imagen:</label>
             <input type="file" id="imagen" name="imagen">
-
-            <!-- <div class="parrafo-terminos">
-                <input type="checkbox">
-                <p>Recibir ofertas por correo.</p>
-
-                <input type="checkbox">
-                <p>Aceptos los términos del servicio.</p>              
-            </div>  -->
 
                 <input type="submit" value="Registrar" class="boton" style="margin: 10px;">            
                 <input type="reset" value="Borrar" class="boton" style="margin: 10px;">
