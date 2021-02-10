@@ -37,12 +37,12 @@
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Socios</span>
 							</a><br>
 							
-							<a href="#">
+							<a href="registro-proveedor.php">
 								<i class="material-icons">work</i>
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Añadir proveedor</span>
 							</a> <br> 
 							
-							<a href="#">
+							<a href="ver-proveedor.php">
 								<i class="material-icons">contacts</i>
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Ver proveedor</span>
 							</a> <br> 
