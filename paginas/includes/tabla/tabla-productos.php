@@ -12,9 +12,9 @@
 				<!-- Imagenes -->
 				<th class = "table-img"></th>
 				<th class = "table-name">Nombre</th>
-				<th class = "table-phone">Teléfono</th>
-				<th class = "table-member">Tipo de Membresía</th>
-				<th class = "table-exp">Fin de Membresía</th>
+				<th class = "table-phone">Descripcion</th>
+				<th class = "table-member">Precio</th>
+				<th class = "table-member">Proveedor</th>
 				<!-- Botones de opciones -->
 				<th class = "table-buttons"></th> 
 			</tr>
@@ -26,35 +26,31 @@
 		
 		// Haciendo coneccion a bd
 		$conexion = conectar();
-			ver_socios($conexion);
-        mysqli_close($conexion);
 
-
-		function ver_socios($conexion) {
-			$sql = "select * from socios";
+			$sql = "select nombreProducto,imagen, descripcion, nombreProveedor, precioUnidad from producto inner join proveedores on producto.id_producto = proveedores.id_proveedor;";
 	
 			$resultado = mysqli_query($conexion, $sql);
 	
 			if (mysqli_num_rows($resultado) > 0) {
 				
 				while ($renglon = mysqli_fetch_assoc($resultado)) {
-					$fotoSocio = $renglon['fotoSocio'];
-					$nombreSocio = $renglon['nombreSocio'];
-					$telefono = $renglon['telefono'];
-					$tipoMembresia = $renglon['tipoMembresia'];
-					$fechaFin = $renglon['fechaFin'];
+					$fotoProducto = $renglon['imagen'];
+					$nombreProducto = $renglon['nombreProducto'];
+					$descripcion = $renglon['descripcion'];
+					$precioUnidad = $renglon['precioUnidad'];
+					$proveedor = $renglon['nombreProveedor'];
 					
 	
 					echo 
 					"	<tbody>
 						<tr>
 						<td class = 'table-img'>
-						<img src='$fotoSocio'>
+						<img src='$fotoProducto'>
 						</td>
-						<td class = 'table-name'>$nombreSocio</td>
-						<td class = 'table-phone'>$telefono</td>
-						<td class = 'table-member'>$tipoMembresia</td>
-						<td class = 'table-exp'>07-02-2021</td>
+						<td class = 'table-name'>$nombreProducto</td>
+						<td class = 'table-phone'>$descripcion</td>
+						<td class = 'table-member'>$precioUnidad</td>
+						<td class = 'table-exp'>$proveedor</td>
 							<td class = 'table-buttons'>
 								<a href='' class = 'edit-button'>Editar</a>
 								<a href='' class = 'delete-button'>Eliminar</a>
@@ -78,7 +74,8 @@
 								<a href='' class = 'delete-button'>Eliminar</a>
 							</td>";
 			}
-		}
+
+		mysqli_close($conexion);
 		?>
 		</tbody>
 	</table>

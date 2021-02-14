@@ -47,12 +47,12 @@
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Ver proveedor</span>
 							</a> <br> 
 
-							<a href="#">
+							<a href="registro-producto.php">
 								<i class="material-icons">local_shipping</i>
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Añadir productos</span>
 							</a> <br> 
 							
-							<a href="#">
+							<a href="ver-producto.php">
 								<i class="material-icons">shopping_basket</i>
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Ver productos</span>
 							</a> <br> 
