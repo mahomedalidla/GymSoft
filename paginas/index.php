@@ -56,10 +56,17 @@
             </nav>
         </div>
         <!-- Fin navegación -->
-
+        <section class="contenedor-tarjetas">
+                <div class="tarjeta-socios">
+                    <h2>Nuevos socios!</h2>
+                </div>
+                <div class="tarjeta-ventas">
+                    <h2>Ventas</h2>
+                </div>
+            </section>
             <!--Sección de inicio-->
             <section class="seccion-inicio" id="inicio">
-
+            
                 <div class="tarjeta-inicio">
                     <h1>Muscle <span>Crew</span></h1>
                     

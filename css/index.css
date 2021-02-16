@@ -227,6 +227,34 @@ nav {
 
 /* ------------- SECCIÓN INICIO ----------------- */
 
+.contenedor-tarjetas {
+
+}
+
+.tarjeta-socios {
+    background: #B1ECFF;
+    width: 30vh;
+    height: 12vh;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.tarjeta-ventas {
+    background: #C6F3B5;
+    width: 30vh;
+    height: 12vh;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px; 
+    
+}
+
+.contenedor-tarjetas, h1 {
+    text-align: center;
+    color:rgb(32, 32, 32);
+    font-family: "IBM Plex Sans", sans-serif;
+}
+/* fin tarjetas */
+
 .seccion-inicio {
     /* background-image: url("../imagenes/fondo.png"); */
     background: rgb(255, 255, 255);
@@ -237,6 +265,8 @@ nav {
     gap: 50px;
     align-content: center;
 }
+
+
 
 .tarjeta-inicio {
     background: var(--tertiary-color);
