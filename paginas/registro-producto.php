@@ -68,7 +68,10 @@
             <input type="text" placeholder="Descripcionn" id="descripcion" name="descripcion">
 
             <label for="precio" id="lbPrecio">Precio:</label>
-            <input type="number" placeholder="10.00" id="precioUnidad" name="precioUnidad" min="1.00">
+            <input type="number" alt="por piezas" placeholder="10.00" id="precioUnidad" name="precioUnidad" min="1.00" step="0.5">
+
+            <label for="cantidad" id="lbCantidad">Cantidad:</label>
+            <input type="number" placeholder="30" id="cantidadProducto" name="cantidadProducto" min="1" step="1">
 
             <label for="imagen">Imagen:</label>
             <input type="file" id="imagen" name="imagen">

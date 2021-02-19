@@ -3,13 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-02-2021 a las 04:40:55
+-- Tiempo de generación: 19-02-2021 a las 03:38:34
 -- Versión del servidor: 10.4.17-MariaDB
 -- Versión de PHP: 8.0.0
-
-
-CREATE DATABASE gymsoft;
-USE gymsoft;
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -39,15 +35,16 @@ CREATE TABLE `socios` (
   `tipoMembresia` varchar(64) NOT NULL,
   `telefono` varchar(64) NOT NULL,
   `fechaNacimiento` varchar(64) NOT NULL,
-  `fechaInicio` varchar(64) NOT NULL
+  `fechaInicio` varchar(64) NOT NULL,
+  `fechaFin` varchar(64) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `socios`
 --
 
-INSERT INTO `socios` (`id_socio`, `nombreSocio`, `fotoSocio`, `sexo`, `tipoMembresia`, `telefono`, `fechaNacimiento`, `fechaInicio`) VALUES
-(14, 'Jhair Aguirre', '../img-uploaded/601db370666327.83901411.jpg', 'Masculino', 'Estudiante', '3113000752', '2001-06-17', '2021-02-05');
+INSERT INTO `socios` (`id_socio`, `nombreSocio`, `fotoSocio`, `sexo`, `tipoMembresia`, `telefono`, `fechaNacimiento`, `fechaInicio`, `fechaFin`) VALUES
+(37, 'Bryan Mahomedalid', '../img-uploaded/60239f12b12111.47850201.jpg', 'Masculino', 'Estudiante', '3113001707', '1998-02-07', '2021-02-10', '');
 
 -- --------------------------------------------------------
 
@@ -93,7 +90,7 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `socios`
 --
 ALTER TABLE `socios`
-  MODIFY `id_socio` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_socio` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`

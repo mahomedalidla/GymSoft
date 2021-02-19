@@ -1,7 +1,7 @@
 body {
     font-family: "Lato", sans-serif;
-    
 }
+
 
 #logo-img{
     border-radius: 50%;
@@ -20,6 +20,16 @@ body {
 #logo-panel{
     padding-bottom: 16px;
     padding-left: 15px;
+}
+
+.sidebar::-webkit-scrollbar {
+
+    width: 8px;     /* Tamaño del scroll en vertical */
+
+    height: 8px;    /* Tamaño del scroll en horizontal */
+
+    display: none;  /* Ocultar scroll */
+
 }
 
 .sidebar {

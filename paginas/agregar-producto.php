@@ -12,11 +12,12 @@
     $nombre = validar ($_POST['nombre']);
     $descripcion = validar ($_POST['descripcion']);
     $precioUnidad = validar ($_POST['precioUnidad']);
+    $cantidad =validar ($_POST['cantidadProducto']);
     $id_proveedor =validar ($_POST['id_proveedor']);
 
     $imagen = subir_imagen($_FILES['imagen']);
 
-    if ($nombre == ''  || $descripcion == '' || $precioUnidad == '' || $imagen == '' || $id_proveedor == '') {
+    if ($nombre == ''  || $descripcion == '' || $precioUnidad == '' || $imagen == '' || $id_proveedor == '' || $cantidad == '') {
         redireccionar('Error en la conexion', 'registro-producto.php');
         return;
     }
@@ -29,8 +30,8 @@
         return;
     }
 
-    $sql = "insert into producto(nombreProducto, descripcion, precioUnidad, imagen, id_proveedor) 
-    values ('$nombre', '$descripcion', '$precioUnidad', '$imagen', '$id_proveedor')";
+    $sql = "insert into producto(nombreProducto, descripcion, precioUnidad, cantidadProducto, imagen, id_proveedor) 
+    values ('$nombre', '$descripcion', '$precioUnidad', $cantidad, '$imagen', '$id_proveedor')";
 
     $resultado = mysqli_query($conexion, $sql);
 
