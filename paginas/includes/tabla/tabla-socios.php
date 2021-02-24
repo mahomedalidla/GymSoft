@@ -55,7 +55,7 @@
 						<td class = 'table-phone'>$telefono</td>
 						<td class = 'table-member'>$tipoMembresia</td>
 						<td class = 'table-exp'>07-02-2021</td>
-							<td class = 'table-buttons'>
+							<td class = 'table-buttons' action='delete.php' method='post'>
 								<a href='' class = 'edit-button'>Editar</a>
 								<a href='' class = 'delete-button'>Eliminar</a>
 							</td>";

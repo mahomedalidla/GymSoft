@@ -14,7 +14,23 @@ function validar ($texto) {
     $texto = stripslashes($texto);
     $texto = htmlspecialchars($texto);
     return $texto;
+} 
+
+function conexionEntrada () {
+
+    $server = 'localhost';
+    $username = 'root';
+    $password = '';
+    $database = 'gymsoft';
+
+    try {
+      $conn = new PDO("mysql:host=$server;dbname=$database;", $username, $password);
+    } catch (PDOException $e) {
+      die('Connection Failed: ' . $e->getMessage());
+    }
 }
+
+
 
 function conectar () {
     DEFINE('SERVIDOR', 'localhost');

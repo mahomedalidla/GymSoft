@@ -26,7 +26,8 @@
         <div class="nav-contenedor">
             <nav>
                 <div class="logo">
-                    <?php
+
+                    <?php 
                         if (isset($_SESSION['usuario'])) {
                             $usuario = $_SESSION['usuario'];
                             echo '<div class="hola"> <p>Hola!&nbsp;</div> <div class = "usuario"><b>'  . " $usuario". '</b></div></p>';
