@@ -14,9 +14,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Pacifico&family=Patua+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" type="text/css" href="includes/sidebar/sidebar.css">
-    <link href="includes/tabla/tabla-socios.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="includes/tabla/tabla-socios.css" rel="stylesheet" type="text/css" /> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
+
+    <!-- To-Do -->
+    <link rel="stylesheet" type="text/css" href="includes/to-do/to-do.css">
+    <script type="text/javascript" src="includes/to-do/to-do.js" defer></script>
+
     <script type="text/javascript" src="includes/sidebar/sidebar.js" defer></script>
 </head>
 <body>
@@ -44,7 +48,7 @@
                         if (isset($_SESSION['usuario'])) {
                             $usuario = $_SESSION['usuario'];
                             
-                            echo '<li><a href="index.php">Inicio</a></li>';
+                            echo '<li class="btn-inicio"><a href="index.php">Inicio</a></li>';
                             
                         }
                         else {
@@ -70,38 +74,22 @@
             <!--Sección de inicio-->
             <section class="seccion-inicio" id="inicio">
             
-                <div class="tarjeta-inicio">
+                <div class="img-tarjeta-inicio">
                     <h1>Muscle <span>Crew</span></h1>
-
+                    <img src="../imagenes/fonto2.png" alt="">
                     <!-- <button class="boton">Ver Postres</button> -->
                     <!-- <a href="#" class="boton">Ver</a> -->
                 </div>
-                        
+                     
+                
                 <div class="img-contenedor">
-
-                    <!-- <script src="../scripts/carrusel.js" defer></script>  
-
-                    <div class="carrusel">
-                        <img src="../imagenes/pastel.png" alt="">
-                        <img src="../imagenes/pastel.png" alt="">
-                        <img src="../imagenes/pastel.png" alt="">
-                        <img src="../imagenes/pastel.png" alt="">
-                        <img src="../imagenes/pastel.png" alt="">
-                    </div>
-                    
-                    <div class="contenedor-nav-img">
-                        <ul class="navegador-img">
-                            <li class="carrusel-btn">&#8718;</li>
-                            <li class="carrusel-btn">&#8718;</li>
-                            <li class="carrusel-btn">&#8718;</li>
-                            <li class="carrusel-btn">&#8718;</li>
-                            <li class="carrusel-btn">&#8718;</li>
-                        </ul>
-                    </div> -->
-
+                <?php
+                        include('includes/to-do/to-do.php');
+                    ?>
                 </div>
 
             </section>
+            
             <!-- Fin sección de inicio-->
             
         </main>

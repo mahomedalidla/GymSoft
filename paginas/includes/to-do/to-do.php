@@ -10,9 +10,9 @@
 </head>
 <body>
     <div id="myDIV" class="header">
-      <h2>My To Do List</h2>
-      <input type="text" id="myInput" placeholder="Title...">
-      <span onclick="newElement()" class="addBtn">Add</span>
+      <h2>Lista de Tareas</h2>
+      <input type="text" id="myInput" placeholder="Tarea...">
+      <span onclick="newElement()" class="addBtn">Añadir</span>
     </div>
 
     <ul id="myUL">
