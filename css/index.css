@@ -23,6 +23,112 @@ html {
 body {
     background-color: #1E9B50;
 }
+/* Carrito */
+
+
+.carrito-boton {
+    width: 40px;
+    background: #42929d;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: fixed;
+    top: 8%;
+    left: 5%;
+    z-index: 15;
+    box-shadow: 0 0 5px gray;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.carrito-boton:hover {
+    background: #E08E79;
+}
+
+.carrito-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 12;
+    background: rgba(255, 255, 255, 0.8);
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+}
+
+.carrito-ventana {
+    width: 400px;
+    background: #42929d;
+    border: 3px solid #21575e;
+    padding: 10px;
+}
+
+.carrito-ventana .titulo {
+    color: white;
+    font-family: "Patua One", serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.carrito-ventana .encabezado-detalle, 
+.carrito-ventana .total {
+    color: white;
+    font-family: "Balsamiq Sans", sans-serif;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.carrito-ventana .total {
+    border-bottom: none;
+    border-top: 1px solid white;
+}
+
+.renglon .precio, 
+.total .precio-total {
+    text-align: right;
+}
+
+.encabezado-detalle .columna-precio {
+    text-align: center;
+}
+
+.productos .renglon {
+    color: white;
+    font-family: "Balsamiq Sans", sans-serif;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    margin-bottom: 10px;
+}
+
+.carrito-ventana .renglon .boton-quitar {
+    color: #42929d;
+    font-family: "Balsamiq Sans", sans-serif;
+    background: #F4F4E1;
+    border: none;
+    cursor: pointer;
+    transition: background 0.5s;
+    margin-left: 5px;
+}
+
+.carrito-ventana .renglon .boton-quitar:hover {
+    background: #E08E79;
+    color: white;
+}
+
+.carrito-ventana .boton-compra {
+    width: 100%;
+}
+
+.carrito-ventana .boton-compra:hover {
+    background: #F4F4E1;
+    color: #42929D;
+}
+
 /* ------------- MENÚ INICIAL ----------------- */
 .nav-contenedor { /* Menu */
     width: 100%;

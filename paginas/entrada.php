@@ -37,7 +37,7 @@ include('includes/encabezado.php');
 //     }
 //   }
 ?>
-<!-- Fin prueba -->
+<!-- Fin prueba --> 
 
 <div class="formulario-div">
 <h3>Datos</h3>
@@ -51,7 +51,7 @@ include('includes/encabezado.php');
         <input type="password" name="password" id="password">
 
         <input type="submit" value="Entrar" class="boton">
-      
+        
     </form>
 </div>
 

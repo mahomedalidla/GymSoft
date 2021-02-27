@@ -57,6 +57,11 @@
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Ver productos</span>
 							</a> <br> 
 							
+							<a href="proceso-ventas.php">
+								<i class="material-icons">monetization_on</i>
+								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Proceso de Ventas</span>
+							</a> <br>
+
 							<a href="#">
 								<i class="material-icons">admin_panel_settings</i>
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Control de acceso</span>
@@ -65,7 +70,11 @@
 							<a href="#">
 								<i class="material-icons">monetization_on</i>
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Control de gastos</span>
-							</a> <br> ';  
+							</a> <br> 
+
+							 ';
+
+							
 							
                         }
                         else {

@@ -14,8 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Pacifico&family=Patua+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/formulario.css">
-    <link rel="stylesheet" href="../css/verpostres.css">
-    <link rel="stylesheet" href="../css/versocios.css">
     <link rel="stylesheet" type="text/css" href="includes/sidebar/sidebar.css">
     <script type="text/javascript" src="includes/sidebar/sidebar.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -37,7 +35,7 @@
 
                 <h2 id="menu-boton">&#9776;</h2>
                 <ul id="menu">
-
+  
                     <?php 
                         if (isset($_SESSION['usuario'])) {
                             $usuario = $_SESSION['usuario'];
