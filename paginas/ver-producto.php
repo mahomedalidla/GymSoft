@@ -45,7 +45,7 @@
                             
                             echo '<li><a href="#">Bienvenido ' . "$usuario". '</a></li>';
 
-                            echo '<li><a href="index.php">Inicio</a></li>';
+                            echo '<li><a href="../index.php">Inicio</a></li>';
                             
                         }
                         else {

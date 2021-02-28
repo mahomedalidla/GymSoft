@@ -1,7 +1,7 @@
 <?php
 if(!isset($_GET["id"])) exit();
 $id = $_GET["id"];
-include_once "../includes/base_de_datos.php";
+include_once "base_de_datos.php";
 $sentencia = $base_de_datos->prepare("SELECT * FROM productos WHERE id = ?;");
 $sentencia->execute([$id]);
 $producto = $sentencia->fetch(PDO::FETCH_OBJ);

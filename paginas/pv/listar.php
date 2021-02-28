@@ -40,4 +40,5 @@ $productos = $sentencia->fetchAll(PDO::FETCH_OBJ);
 			</tbody>
 		</table>
 	</div>
-<?php include_once "pie.php" ?>
+	</body>
+</html>

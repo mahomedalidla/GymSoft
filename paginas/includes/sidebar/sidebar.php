@@ -5,6 +5,11 @@
     }
 ?>
 
+<?php
+
+	
+?>
+
 <div id="sidebar" class="sidebar" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
 	<a href="index.php" id = "logo-panel">
     	<img src="../imagenes/logo.png" alt="Logo" id="logo-img">
@@ -17,7 +22,7 @@
                             $usuario = $_SESSION['usuario'];
 							
 							echo
-							'<a href="index.php">
+							'<a href="../index.php">
 								<i class="material-icons">person</i>
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;'."$usuario".'</span>
 							</a><br>
@@ -57,7 +62,7 @@
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Ver productos</span>
 							</a> <br> 
 							
-							<a href="proceso-ventas.php">
+							<a href="proceso-ventas2.php">
 								<i class="material-icons">monetization_on</i>
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Proceso de Ventas</span>
 							</a> <br>
