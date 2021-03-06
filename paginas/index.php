@@ -14,7 +14,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Pacifico&family=Patua+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" type="text/css" href="includes/sidebar/sidebar.css">
-    <!-- <link href="includes/tabla/tabla-socios.css" rel="stylesheet" type="text/css" /> -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!-- To-Do -->
@@ -77,8 +76,6 @@
                 <div class="img-tarjeta-inicio">
                     <h1>Muscle <span>Crew</span></h1>
                     <img src="../imagenes/fonto2.png" alt="">
-                    <!-- <button class="boton">Ver Postres</button> -->
-                    <!-- <a href="#" class="boton">Ver</a> -->
                 </div>
                      
                 

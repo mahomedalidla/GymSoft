@@ -19,5 +19,5 @@
     </div>
     <p class="derechos">&copy;Todos los derechos reservados. 2021</p>
 </footer>
-</div>
+</div>  
 <!-- Fin Pie de página -->

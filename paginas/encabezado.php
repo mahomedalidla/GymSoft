@@ -40,7 +40,7 @@ include('includes/sidebar/sidebar.php');
         <div class="nav-contenedor">
             <nav>
                 <div class="logo">
-                    <h2>Muscle Crew - Productos</h2>
+                    <h2>Muscle Crew - Proceso de Venta</h2>
                 </div>
                 <h2 id="menu-boton">&#9776;</h2>
                 <ul id="menu">

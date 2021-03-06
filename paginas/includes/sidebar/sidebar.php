@@ -34,33 +34,13 @@
 							
 							<a href="registro-socio.php">
 								<i class="material-icons">person_add</i>
-								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Añadir socio</span>
+								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Añadir socios</span>
 							</a><br>
 							
 							<a href="ver-socios.php">
 								<i class="material-icons">people</i>
-								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Socios</span>
+								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Ver socios</span>
 							</a><br>
-							
-							<a href="registro-proveedor.php">
-								<i class="material-icons">work</i>
-								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Añadir proveedor</span>
-							</a> <br> 
-							
-							<a href="ver-proveedor.php">
-								<i class="material-icons">contacts</i>
-								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Ver proveedor</span>
-							</a> <br> 
-
-							<a href="registro-producto.php">
-								<i class="material-icons">local_shipping</i>
-								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Añadir productos</span>
-							</a> <br> 
-							
-							<a href="ver-producto.php">
-								<i class="material-icons">shopping_basket</i>
-								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Ver productos</span>
-							</a> <br> 
 							
 							<a href="proceso-ventas2.php">
 								<i class="material-icons">monetization_on</i>
