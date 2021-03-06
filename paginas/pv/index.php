@@ -1,3 +1,3 @@
 <?php
- header("Location: pv/listar.php");
+ header("Location: listar.php");
 ?>

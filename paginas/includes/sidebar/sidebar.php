@@ -22,7 +22,7 @@
                             $usuario = $_SESSION['usuario'];
 							
 							echo
-							'<a href="../index.php">
+							'<a href="index.php">
 								<i class="material-icons">person</i>
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;'."$usuario".'</span>
 							</a><br>
@@ -72,11 +72,6 @@
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Control de acceso</span>
 							</a> <br> 
 							
-							<a href="#">
-								<i class="material-icons">monetization_on</i>
-								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Control de gastos</span>
-							</a> <br> 
-
 							 ';
 
 							
