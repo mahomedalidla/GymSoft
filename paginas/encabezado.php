@@ -30,7 +30,25 @@
     
     <script src="../scripts/menu.js" defer></script>  
     <script src="../scripts/carrito.js" defer></script>
+
+    
 </head>
+<script type="text/javascript">
+        function confirmDelete()
+        {
+            var respuesta = confirm("¿Seguro que deseas eliminar este producto?");
+            if(respuesta == true){return true;}else{return false;}
+        }
+
+        function confirmDeleteVenta()
+        {
+            var respuesta = confirm("¿Seguro que deseas eliminar la venta?");
+            if(respuesta == true){return true;}else{return false;}
+        }
+
+        
+        
+    </script>
 <body>	
 <?php 
 include('includes/sidebar/sidebar.php');

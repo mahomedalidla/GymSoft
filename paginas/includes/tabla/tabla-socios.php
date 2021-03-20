@@ -1,3 +1,10 @@
+
+<?php
+include_once "base_de_datos.php";
+$sentencia = $base_de_datos->query("SELECT * FROM socios;");
+$socios = $sentencia->fetchAll(PDO::FETCH_OBJ);
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,19 +39,24 @@
 
 		function ver_socios($conexion) {
 			$sql = "select * from socios";
-	
+			$urlImagenBasica = "../img-uploaded/default.png";
 			$resultado = mysqli_query($conexion, $sql);
 	
 			if (mysqli_num_rows($resultado) > 0) {
-				
 				while ($renglon = mysqli_fetch_assoc($resultado)) {
+					$id = $renglon['id_socio'];
 					$fotoSocio = $renglon['fotoSocio'];
 					$nombreSocio = $renglon['nombreSocio'];
 					$telefono = $renglon['telefono'];
 					$tipoMembresia = $renglon['tipoMembresia'];
 					$fechaFin = $renglon['fechaFin'];
+
 					
-	
+				  
+					if($fotoSocio == null) {
+						$fotoSocio = $urlImagenBasica;
+					 }
+					
 					echo 
 					"	<tbody>
 						<tr>
@@ -54,10 +66,13 @@
 						<td class = 'table-name'>$nombreSocio</td>
 						<td class = 'table-phone'>$telefono</td>
 						<td class = 'table-member'>$tipoMembresia</td>
-						<td class = 'table-exp'>07-02-2021</td>
+						<td class = 'table-exp'>$fechaFin</td>
 							<td class = 'table-buttons' action='delete.php' method='post'>
-								<a href='' class = 'edit-button'>Editar</a>
-								<a href='' class = 'delete-button'>Eliminar</a>
+
+							
+							<a class='btn btn-warning' href='eliminarSocio.php?id='.$id.'>acac<i class='fa fa-edit'></i></a>
+								<a href=''<?php echo 'eliminarSocio.php?id=' . $id?>'' class = 'delete-button'>Eldiminar</a>
+
 							</td>";
 				}
 				
@@ -75,7 +90,7 @@
 						<td class = 'table-exp'>No hay datos</td>
 							<td class = 'table-buttons'>
 								<a href='' class = 'edit-button'>Editar</a>
-								<a href='' class = 'delete-button'>Eliminar</a>
+								
 							</td>";
 			}
 		}

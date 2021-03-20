@@ -1,5 +1,9 @@
 <!-- idsocio 	nombreSocio 	fotoSocio 	sexo 	membresiaMembresia 	telefono 	fechaNacimiento -->
-
+<?php
+include_once "base_de_datos.php";
+$sentencia = $base_de_datos->query("SELECT * FROM productos;");
+$productos = $sentencia->fetchAll(PDO::FETCH_OBJ);
+?>
 <?php
 
     include('includes/utileria.php');
@@ -37,9 +41,11 @@
     $fechaFin = new DateTime('');
     $fechaFin->modify( 'next month' );
 
+    /* Convert DateTime to String */
+    $newDate = $fechaFin->format('Y-m-d');
 
-    $sql = "insert into socios(nombreSocio, fotoSocio, sexo, tipoMembresia, telefono, fechaNacimiento, fechaInicio) 
-    values ('$nombre', '$imagen', '$sexo', '$membresia', '$telefono', '$fechaN', '$fechaActual')";
+    $sql = "insert into socios(nombreSocio, fotoSocio, sexo, tipoMembresia, telefono, fechaNacimiento, fechaInicio, fechaFin) 
+    values ('$nombre', '$imagen', '$sexo', '$membresia', '$telefono', '$fechaN', '$fechaActual', '$newDate')";
 
     $resultado = mysqli_query($conexion, $sql);
 

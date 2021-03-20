@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS ventas;
-CREATE DATABASE IF NOT EXISTS ventas;
-USE ventas;
+DROP DATABASE IF EXISTS gymSoftV1;
+CREATE DATABASE IF NOT EXISTS gymSoftV1;
+USE gymSoftV1;
 CREATE TABLE productos(
 	id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
 	codigo VARCHAR(255) NOT NULL,
@@ -36,4 +36,79 @@ VALUES
 (4, '4', 'Palomitas de maíz', 15, 12, 100),
 (5, '5', 'Doritos', 8, 5, 100);
 
+
+/* Addition */
+
+
+CREATE TABLE `socios` (
+  `id_socio` int(11) NOT NULL,
+  `nombreSocio` varchar(64) NOT NULL,
+  `fotoSocio` varchar(1024) NOT NULL,
+  `sexo` varchar(64) NOT NULL,
+  `tipoMembresia` varchar(64) NOT NULL,
+  `telefono` varchar(64) NOT NULL,
+  `fechaNacimiento` varchar(64) NOT NULL,
+  `fechaInicio` varchar(64) NOT NULL,
+  `fechaFin` varchar(64) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `socios`
+--
+
+INSERT INTO `socios` (`id_socio`, `nombreSocio`, `fotoSocio`, `sexo`, `tipoMembresia`, `telefono`, `fechaNacimiento`, `fechaInicio`, `fechaFin`) VALUES
+(37, 'Bryan Mahomedalid', '../img-uploaded/60239f12b12111.47850201.jpg', 'Masculino', 'Estudiante', '3113001707', '1998-02-07', '2021-02-10', '');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuarios`
+--
+
+CREATE TABLE `usuarios` (
+  `id_usuario` int(11) NOT NULL,
+  `nombreUsuario` varchar(64) NOT NULL,
+  `direccionUsuario` varchar(64) DEFAULT NULL,
+  `contrasenaUsuario` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`id_usuario`, `nombreUsuario`, `direccionUsuario`, `contrasenaUsuario`) VALUES
+(1, 'bryan', 'direccion', '123');
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `socios`
+--
+ALTER TABLE `socios`
+  ADD PRIMARY KEY (`id_socio`);
+
+--
+-- Indices de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  ADD PRIMARY KEY (`id_usuario`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `socios`
+--
+ALTER TABLE `socios`
+  MODIFY `id_socio` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+
+--
+-- AUTO_INCREMENT de la tabla `usuarios`
+--
+ALTER TABLE `usuarios`
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+COMMIT;
 # Correcto
