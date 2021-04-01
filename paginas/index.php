@@ -29,7 +29,7 @@
         <div class="nav-contenedor">
             <nav>
                 <div class="logo">
-
+                
                     <?php 
                         if (isset($_SESSION['usuario'])) {
                             $usuario = $_SESSION['usuario'];
@@ -39,6 +39,12 @@
                         }
                     ?>
                 </div>
+                <div id="clockdate">
+				<div class="clockdate-wrapper">
+					<div id="clock"></div>
+					<div id="date"><?php echo date('l, F j, Y'); ?></div>
+				</div>
+			</div>
 
                 <h2 id="menu-boton">&#9776;</h2>
                 <ul id="menu">

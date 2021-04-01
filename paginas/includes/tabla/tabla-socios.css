@@ -2,6 +2,11 @@
 	align-items: center;
 }
 
+body {
+	min-height: 90vh;
+	min-width: 10vh;
+}
+
 table {
 	margin: auto;
 }

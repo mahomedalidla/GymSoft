@@ -47,10 +47,20 @@
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Proceso de Ventas</span>
 							</a> <br>
 
-							<a href="#">
+							<a href="vender.php">
+								<i class="material-icons">shopping_cart</i>
+								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Vender</span>
+							</a> <br>
+
+							<a href="access-control.php">
 								<i class="material-icons">admin_panel_settings</i>
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Control de acceso</span>
 							</a> <br> 
+
+							<a href="code-bar.php">
+								<i class="material-icons">view_week</i>
+								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Re-Generar CB</span>
+							</a> <br>
 							
 							 ';
 

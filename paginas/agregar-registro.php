@@ -19,6 +19,11 @@ $productos = $sentencia->fetchAll(PDO::FETCH_OBJ);
     $telefono = validar ($_POST['telefono']);
     $fechaN =validar ($_POST['fechaN']);
 
+    if ($telefono == "") {
+        # code...
+        $telefono = 0;
+    }
+
     if ($nombre == '' || $sexo == '' || $membresia == '' || $telefono == '') {
         redireccionar('Error en la conexion', 'registro-socio.php');
         return;

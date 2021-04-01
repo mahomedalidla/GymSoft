@@ -60,7 +60,7 @@
             <h2><b>Añadir Socio </b></h2>
         </div> 
         <form action="agregar-registro.php" method="post" enctype="multipart/form-data">
-            
+             
 
             <label for="Nombre" id="lbNombre">Nombre:</label>
             <input type="text" placeholder="Nombre" id="nombre" name="nombre">

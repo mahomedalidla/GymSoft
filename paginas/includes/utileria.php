@@ -14,9 +14,9 @@ function validar ($texto) {
     $texto = stripslashes($texto);
     $texto = htmlspecialchars($texto);
     return $texto;
-} 
+}  
 
-
+ 
 function conectar () {
     DEFINE('SERVIDOR', 'localhost');
     DEFINE('USUARIO', 'root');
