@@ -21,6 +21,7 @@ $socios = $sentencia->fetchAll(PDO::FETCH_OBJ);
 				<th class = "table-name">Nombre</th>
 				<th class = "table-phone">Teléfono</th>
 				<th class = "table-member">Tipo de Membresía</th>
+				<th class = "table-member">Horario</th>
 				<th class = "table-exp">Fin de Membresía</th>
 				<!-- Botones de opciones -->
 				<th class = "table-buttons"></th> 
@@ -38,7 +39,8 @@ $socios = $sentencia->fetchAll(PDO::FETCH_OBJ);
 
 
 		function ver_socios($conexion) {
-			$sql = "select * from socios";
+			$sql = "select id_socio, fotoSocio, nombreSocio, telefono, tipoMembresia, H.time_in, H.time_out, fechaFin from socios S inner join schedules H on H.id = S.id_horario;"; 
+			
 			$urlImagenBasica = "../img-uploaded/default.png";
 			$resultado = mysqli_query($conexion, $sql);
 	
@@ -49,9 +51,9 @@ $socios = $sentencia->fetchAll(PDO::FETCH_OBJ);
 					$nombreSocio = $renglon['nombreSocio'];
 					$telefono = $renglon['telefono'];
 					$tipoMembresia = $renglon['tipoMembresia'];
+					$entrada = $renglon['time_in'];
+					$salida = $renglon['time_out'];
 					$fechaFin = $renglon['fechaFin'];
-
-					
 				  
 					if($fotoSocio == null) {
 						$fotoSocio = $urlImagenBasica;
@@ -66,6 +68,7 @@ $socios = $sentencia->fetchAll(PDO::FETCH_OBJ);
 						<td class = 'table-name'>$nombreSocio</td>
 						<td class = 'table-phone'>$telefono</td>
 						<td class = 'table-member'>$tipoMembresia</td>
+						<td class = 'table-member'>$entrada - $salida</td>
 						<td class = 'table-exp'>$fechaFin</td>
 							<td class = 'table-buttons' action='delete.php' method='post'>
 

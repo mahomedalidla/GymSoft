@@ -52,7 +52,7 @@
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Vender</span>
 							</a> <br>
 
-							<a href="access-control.php">
+							<a href="control-acceso/index.php" target="_blank">
 								<i class="material-icons">admin_panel_settings</i>
 								<span class="icon-text">&nbsp;&nbsp;&nbsp;&nbsp;Control de acceso</span>
 							</a> <br> 

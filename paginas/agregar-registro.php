@@ -17,6 +17,7 @@ $productos = $sentencia->fetchAll(PDO::FETCH_OBJ);
     $sexo = validar ($_POST['sexo']);
     $membresia = validar ($_POST['membresia']);
     $telefono = validar ($_POST['telefono']);
+    $horario = validar($_POST['id_horario']);
     $fechaN =validar ($_POST['fechaN']);
 
     if ($telefono == "") {
@@ -49,8 +50,8 @@ $productos = $sentencia->fetchAll(PDO::FETCH_OBJ);
     /* Convert DateTime to String */
     $newDate = $fechaFin->format('Y-m-d');
 
-    $sql = "insert into socios(nombreSocio, fotoSocio, sexo, tipoMembresia, telefono, fechaNacimiento, fechaInicio, fechaFin) 
-    values ('$nombre', '$imagen', '$sexo', '$membresia', '$telefono', '$fechaN', '$fechaActual', '$newDate')";
+    $sql = "insert into socios(nombreSocio, fotoSocio, sexo, tipoMembresia, telefono, fechaNacimiento, fechaInicio, fechaFin, id_horario) 
+    values ('$nombre', '$imagen', '$sexo', '$membresia', '$telefono', '$fechaN', '$fechaActual', '$newDate', '$horario')";
 
     $resultado = mysqli_query($conexion, $sql);
 

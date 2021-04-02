@@ -80,7 +80,40 @@
                 <option value="General">General</option>
                 <option value="Estudiante">Estudiante</option>
             </select>
+            
+            <label for='horario'>Selecciona Horario:</label>
+            <select name='id_horario' id='id_horario'>
+            <?php
+                include("includes/utileria.php");
+                
+                $conexion = conectar();
 
+                
+
+			$sql = "select * from schedules";
+	
+			$resultado = mysqli_query($conexion, $sql);
+	
+			if (mysqli_num_rows($resultado) > 0) {
+				
+				while ($renglon = mysqli_fetch_assoc($resultado)) {
+					$time_in = $renglon['time_in'];
+                    $time_out = $renglon['time_out'];
+                    // $time_out = $;
+                    $id = $renglon['id'];
+					
+                echo
+                "
+                    <option value='$id'>$time_in  -  $time_out</option>
+                ";
+                }
+            }
+            mysqli_close($conexion);
+            ?>
+
+            <!--  -->
+           
+            </select>
             
             <label for="fechaN">Fecha de nacimiento:</label>
             <input type="date" id="fechaN" name="fechaN">
