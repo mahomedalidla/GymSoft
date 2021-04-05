@@ -1,5 +1,10 @@
 <?php include 'includes/session.php'; ?>
 <?php include 'includes/header.php'; ?>
+
+<?php
+include_once "../../base_de_datos.php";
+
+?>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
 
@@ -7,7 +12,8 @@
   <?php include 'includes/menubar.php'; ?>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+  <div class="content-wrapper" style="border-top-right-radius: 40px;
+    border-top-left-radius: 40px; padding: 1%;">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
@@ -45,23 +51,31 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="box">
-            <div class="box-header with-border">
-              <a href="#addnew" data-toggle="modal" class="btn btn-primary btn-sm btn-flat"><i class="fa fa-plus"></i> Nuevo</a>
-            </div>
             <div class="box-body">
               <table id="example1" class="table table-bordered">
                 <thead>
                   <th class="hidden"></th>
                   <th>Fecha</th>
-                  <th>ID Empleado</th>
+                  <th>ID Socio</th>
                   <th>Nombre</th>
                   <th>Hora Entrada</th>
                   <th>Hora Salida</th>
-                  <th>Acción</th>
                 </thead>
                 <tbody>
                   <?php
-                    $sql = "SELECT *, employees.employee_id AS empid, attendance.id AS attid FROM attendance LEFT JOIN employees ON employees.id=attendance.employee_id ORDER BY attendance.date DESC, attendance.time_in DESC";
+                 
+                  include('../../includes/utileria.php');
+              
+                  if (session_status() == PHP_SESSION_NONE) {
+                      session_start();
+                  }
+              
+                  $conn = conectar();
+                    
+
+                    $sql = "SELECT *, socios.id_socio AS empid, attendance.id AS attid FROM attendance 
+                            LEFT JOIN socios ON socios.id_socio=attendance.socio_id ORDER BY attendance.date DESC, attendance.time_in DESC";
+
                     $query = $conn->query($sql);
                     while($row = $query->fetch_assoc()){
                       $status = ($row['status'])?'<span class="label label-warning pull-right">a tiempo</span>':'<span class="label label-danger pull-right">tarde</span>';
@@ -70,13 +84,9 @@
                           <td class='hidden'></td>
                           <td>".date('M d, Y', strtotime($row['date']))."</td>
                           <td>".$row['empid']."</td>
-                          <td>".$row['firstname'].' '.$row['lastname']."</td>
+                          <td>".$row['nombreSocio'].' '."</td>
                           <td>".date('h:i A', strtotime($row['time_in'])).$status."</td>
                           <td>".date('h:i A', strtotime($row['time_out']))."</td>
-                          <td>
-                            <button class='btn btn-success btn-sm btn-flat edit' data-id='".$row['attid']."'><i class='fa fa-edit'></i> Editar</button>
-                            <button class='btn btn-danger btn-sm btn-flat delete' data-id='".$row['attid']."'><i class='fa fa-trash'></i> Eliminar</button>
-                          </td>
                         </tr>
                       ";
                     }

@@ -2,6 +2,7 @@
 <?php include 'header.php'; ?>
 <body class="hold-transition login-page" style=" background: #1E9B50;">
 <div class="login-box">
+<h1 style="text-align: center;" >Muscle Crew</h1>
   	<div class="login-logo">
   		<p id="date"></p>
       <p id="time" class="bold"></p>

@@ -8,17 +8,17 @@
 		$employee = $_POST['employee'];
 		$status = $_POST['status'];
 
-		$sql = "SELECT * FROM employees WHERE employee_id = '$employee'";
+		$sql = "SELECT * FROM socios WHERE id_socio = '$employee'";
 		$query = $conn->query($sql);
 
 		if($query->num_rows > 0){
 			$row = $query->fetch_assoc();
-			$id = $row['id'];
+			$id = $row['id_socio'];
 
 			$date_now = date('Y-m-d');
 
 			if($status == 'in'){
-				$sql = "SELECT * FROM attendance WHERE employee_id = '$id' AND date = '$date_now' AND time_in IS NOT NULL";
+				$sql = "SELECT * FROM attendance WHERE socio_id = '$id' AND date = '$date_now' AND time_in IS NOT NULL";
 				$query = $conn->query($sql);
 				if($query->num_rows > 0){
 					$output['error'] = true;
@@ -33,9 +33,10 @@
 					$srow = $squery->fetch_assoc();
 					$logstatus = ($lognow > $srow['time_in']) ? 0 : 1;
 					//
-					$sql = "INSERT INTO attendance (employee_id, date, time_in, status) VALUES ('$id', '$date_now', NOW(), '$logstatus')";
+					$sql = "INSERT INTO attendance (socio_id, date, time_in, status) VALUES ('$id', '$date_now', NOW(), '$logstatus')";
+					
 					if($conn->query($sql)){
-						$output['message'] = 'Llegada: '.$row['firstname'].' '.$row['lastname'];
+						$output['message'] = 'Llegada: '.$row['nombreSocio'];
 					}
 					else{
 						$output['error'] = true;
@@ -44,7 +45,7 @@
 				}
 			}
 			else{
-				$sql = "SELECT *, attendance.id AS uid FROM attendance LEFT JOIN employees ON employees.id=attendance.employee_id WHERE attendance.employee_id = '$id' AND date = '$date_now'";
+				$sql = "SELECT *, attendance.id AS uid FROM attendance LEFT JOIN socios ON socios.id_socio=attendance.socio_id WHERE attendance.socio_id = '$id' AND date = '$date_now'";
 				$query = $conn->query($sql);
 				if($query->num_rows < 1){
 					$output['error'] = true;
@@ -69,7 +70,7 @@
 							$time_in = $urow['time_in'];
 							$time_out = $urow['time_out'];
 
-							$sql = "SELECT * FROM employees LEFT JOIN schedules ON schedules.id=employees.schedule_id WHERE employees.id = '$id'";
+							$sql = "SELECT * FROM socios LEFT JOIN schedules ON schedules.id=socios.id_horario WHERE socios.id_socios = '$id'";
 							$query = $conn->query($sql);
 							$srow = $query->fetch_assoc();
 
@@ -106,7 +107,7 @@
 		}
 		else{
 			$output['error'] = true;
-			$output['message'] = 'ID de empleado no encontrado';
+			$output['message'] = 'ID de socio no encontrado';
 		}
 		
 	}

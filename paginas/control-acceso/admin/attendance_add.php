@@ -1,25 +1,27 @@
 <?php
-	include 'includes/session.php';
+	include('../../includes/utileria.php');
+    $conn = conectar();
+
 
 	if(isset($_POST['add'])){
-		$employee = $_POST['employee'];
+		$employee = $_POST['nombreSocio'];
 		$date = $_POST['date'];
 		$time_in = $_POST['time_in'];
 		$time_in = date('H:i:s', strtotime($time_in));
 		$time_out = $_POST['time_out'];
 		$time_out = date('H:i:s', strtotime($time_out));
 
-		$sql = "SELECT * FROM employees WHERE employee_id = '$employee'";
+		$sql = "SELECT * FROM socios WHERE id_socio = '$employee'";
 		$query = $conn->query($sql);
 
 		if($query->num_rows < 1){
-			$_SESSION['error'] = 'Employee not found';
+			$_SESSION['error'] = 'Socio not found';
 		}
 		else{
 			$row = $query->fetch_assoc();
 			$emp = $row['id'];
 
-			$sql = "SELECT * FROM attendance WHERE employee_id = '$emp' AND date = '$date'";
+			$sql = "SELECT * FROM attendance WHERE socio_id = '$emp' AND date = '$date'";
 			$query = $conn->query($sql);
 
 			if($query->num_rows > 0){
@@ -33,12 +35,12 @@
 				$scherow = $squery->fetch_assoc();
 				$logstatus = ($time_in > $scherow['time_in']) ? 0 : 1;
 				//
-				$sql = "INSERT INTO attendance (employee_id, date, time_in, time_out, status) VALUES ('$emp', '$date', '$time_in', '$time_out', '$logstatus')";
+				$sql = "INSERT INTO attendance (id_socio, date, time_in, time_out, status) VALUES ('$emp', '$date', '$time_in', '$time_out', '$logstatus')";
 				if($conn->query($sql)){
 					$_SESSION['success'] = 'Attendance added successfully';
 					$id = $conn->insert_id;
 
-					$sql = "SELECT * FROM employees LEFT JOIN schedules ON schedules.id=employees.schedule_id WHERE employees.id = '$emp'";
+					$sql = "SELECT * FROM socios LEFT JOIN schedules ON schedules.id=socios.schedule_id WHERE socios.id_socio = '$emp'";
 					$query = $conn->query($sql);
 					$srow = $query->fetch_assoc();
 

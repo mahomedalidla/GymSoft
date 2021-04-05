@@ -3,9 +3,9 @@
 
 	if(isset($_POST['delete'])){
 		$id = $_POST['id'];
-		$sql = "DELETE FROM employees WHERE id = '$id'";
+		$sql = "DELETE FROM socios WHERE id_socio = '$id'";
 		if($conn->query($sql)){
-			$_SESSION['success'] = 'Empleado eliminado con éxito';
+			$_SESSION['success'] = 'Socio eliminado con éxito';
 		}
 		else{
 			$_SESSION['error'] = $conn->error;

@@ -15,7 +15,8 @@
   	<?php include 'includes/menubar.php'; ?>
 
   <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
+  <div class="content-wrapper" style="border-top-right-radius: 40px;
+    border-top-left-radius: 40px; padding: 1%;">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
@@ -58,7 +59,7 @@
           <div class="small-box bg-aqua">
             <div class="inner">
               <?php
-                $sql = "SELECT * FROM employees";
+                $sql = "SELECT * FROM socios";
                 $query = $conn->query($sql);
 
                 echo "<h3>".$query->num_rows."</h3>";
@@ -230,7 +231,7 @@ $(function(){
       },
       {
         label               : 'A tiempo',
-        fillColor           : 'rgba(60,141,188,0.9)',
+        fillColor           : '00a65a',
         strokeColor         : 'rgba(60,141,188,0.8)',
         pointColor          : '#3b8bba',
         pointStrokeColor    : 'rgba(60,141,188,1)',

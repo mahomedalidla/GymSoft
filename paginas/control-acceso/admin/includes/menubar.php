@@ -31,7 +31,9 @@
             <li><a href="schedule.php"><i class="fa fa-circle-o"></i> Horarios</a></li>
           </ul>
         </li>
-        <li><a href="position.php"><i class="fa fa-suitcase"></i> Cargos</a></li>
+        <li><a href="position.php"><i class="fa fa-suitcase"></i> <span>Cargos</span></a></li>
+        <li class="header">PANEL PRINCIPAL</li>
+        <li><a href="../../listar.php"><i class="fa fa-home"></i> <span>Panel Principal</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->

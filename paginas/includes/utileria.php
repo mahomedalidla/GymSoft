@@ -26,6 +26,9 @@ function conectar () {
     $resultado = mysqli_connect(SERVIDOR, USUARIO, PASSWORD, BD);
     
     return $resultado;
+
+    $query = $conn->query($sql);
+	$user = $query->fetch_assoc();
 }
 
 function subir_imagen ($archivo) {

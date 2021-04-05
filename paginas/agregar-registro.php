@@ -20,6 +20,8 @@ $productos = $sentencia->fetchAll(PDO::FETCH_OBJ);
     $horario = validar($_POST['id_horario']);
     $fechaN =validar ($_POST['fechaN']);
 
+    
+
     if ($telefono == "") {
         # code...
         $telefono = 0;

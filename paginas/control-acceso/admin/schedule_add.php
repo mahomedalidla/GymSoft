@@ -1,5 +1,7 @@
 <?php
 	include 'includes/session.php';
+	include('../../includes/utileria.php');
+      $conn = conectar();
 
 	if(isset($_POST['add'])){
 		$time_in = $_POST['time_in'];

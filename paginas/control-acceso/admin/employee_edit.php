@@ -1,7 +1,16 @@
 <?php
 	include 'includes/session.php';
 
+
 	if(isset($_POST['edit'])){
+		$nombre =  $_POST['nombre'];
+    	$sexo =  $_POST['sexo'];
+    	$membresia =  $_POST['membresia'];
+    	$telefono =  $_POST['telefono'];
+    	$horario =  $_POST['id_horario'];
+    	$fechaN = $_POST['fechaN'];
+		$posicion = $_POST['description'];
+		/*  */
 		$empid = $_POST['id'];
 		$firstname = $_POST['firstname'];
 		$lastname = $_POST['lastname'];
@@ -12,7 +21,7 @@
 		$position = $_POST['position'];
 		$schedule = $_POST['schedule'];
 		
-		$sql = "UPDATE employees SET firstname = '$firstname', lastname = '$lastname', address = '$address', birthdate = '$birthdate', contact_info = '$contact', gender = '$gender', position_id = '$position', schedule_id = '$schedule' WHERE id = '$empid'";
+		$sql = "UPDATE socios SET firstname = '$firstname', lastname = '$lastname', address = '$address', birthdate = '$birthdate', contact_info = '$contact', gender = '$gender', position_id = '$position', schedule_id = '$schedule' WHERE id = '$empid'";
 		if($conn->query($sql)){
 			$_SESSION['success'] = 'Empleado actualizado con éxito';
 		}

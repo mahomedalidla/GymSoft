@@ -69,14 +69,7 @@ $socios = $sentencia->fetchAll(PDO::FETCH_OBJ);
 						<td class = 'table-phone'>$telefono</td>
 						<td class = 'table-member'>$tipoMembresia</td>
 						<td class = 'table-member'>$entrada - $salida</td>
-						<td class = 'table-exp'>$fechaFin</td>
-							<td class = 'table-buttons' action='delete.php' method='post'>
-
-							
-							<a class='btn btn-warning' href='eliminarSocio.php?id='.$id.'>acac<i class='fa fa-edit'></i></a>
-								<a href=''<?php echo 'eliminarSocio.php?id=' . $id?>'' class = 'delete-button'>Eldiminar</a>
-
-							</td>";
+						<td class = 'table-exp'>$fechaFin</td>";
 				}
 				
 			} 
