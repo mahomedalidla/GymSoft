@@ -5,13 +5,13 @@ $sentencia = $base_de_datos->query("SELECT * FROM productos;");
 $productos = $sentencia->fetchAll(PDO::FETCH_OBJ);
 ?>
 
-	<div class="col-xs-12">
+	<div class="col-xs-12" style="min-height: 100vh;">
 		<h1>Productos</h1>
 		<div>
 			<a class="btn btn-success" href="./formulario.php">Nuevo <i class="fa fa-plus"></i></a>
 		</div>
 		<br>
-		<table class="table table-bordered">
+		<table class="table table-bordered"">
 			<thead>
 				<tr>
 					<th>ID</th>

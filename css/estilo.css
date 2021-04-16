@@ -19,7 +19,7 @@ body{
 .col-xs-12 {
 	background: white;
 	padding-top: 0%;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .col-xs-12 h1 {

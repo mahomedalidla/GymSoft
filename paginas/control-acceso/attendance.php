@@ -1,7 +1,7 @@
 <?php
 	if(isset($_POST['employee'])){
 		$output = array('error'=>false);
-
+ 
 		include 'conn.php';
 		include 'timezone.php';
 
@@ -26,7 +26,7 @@
 				}
 				else{
 					//updates
-					$sched = $row['schedule_id'];
+					$sched = $row['id_horario'];
 					$lognow = date('H:i:s');
 					$sql = "SELECT * FROM schedules WHERE id = '$sched'";
 					$squery = $conn->query($sql);

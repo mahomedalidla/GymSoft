@@ -85,7 +85,7 @@
             	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
               		<span aria-hidden="true">&times;</span></button>
             	<h4 class="modal-title"><b>Borrando...</b></h4>
-          	</div>
+          	</div> 
           	<div class="modal-body">
             	<form class="form-horizontal" method="POST" action="schedule_delete.php">
             		<input type="hidden" id="del_timeid" name="id">

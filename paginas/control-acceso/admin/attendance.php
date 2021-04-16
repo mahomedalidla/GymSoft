@@ -56,40 +56,33 @@ include_once "../../base_de_datos.php";
                 <thead>
                   <th class="hidden"></th>
                   <th>Fecha</th>
-                  <th>ID Socio</th>
+                  <th>Código Socio</th>
                   <th>Nombre</th>
                   <th>Hora Entrada</th>
                   <th>Hora Salida</th>
                 </thead>
                 <tbody>
                   <?php
-                 
-                  include('../../includes/utileria.php');
-              
-                  if (session_status() == PHP_SESSION_NONE) {
-                      session_start();
-                  }
-              
-                  $conn = conectar();
-                    
-
+                  /* Error "tarde" */
                     $sql = "SELECT *, socios.id_socio AS empid, attendance.id AS attid FROM attendance 
                             LEFT JOIN socios ON socios.id_socio=attendance.socio_id ORDER BY attendance.date DESC, attendance.time_in DESC";
 
                     $query = $conn->query($sql);
                     while($row = $query->fetch_assoc()){
-                      $status = ($row['status'])?'<span class="label label-warning pull-right">a tiempo</span>':'<span class="label label-danger pull-right">tarde</span>';
+                      // $status = ($row['status'])?'<span class="label label-warning pull-right">a tiempo</span>':'<span class="label label-danger pull-right">tarde</span>';
                       echo "
                         <tr>
                           <td class='hidden'></td>
                           <td>".date('M d, Y', strtotime($row['date']))."</td>
                           <td>".$row['empid']."</td>
                           <td>".$row['nombreSocio'].' '."</td>
-                          <td>".date('h:i A', strtotime($row['time_in'])).$status."</td>
+                          <td>".date('h:i A', strtotime($row['time_in']))."</td>
+                         
                           <td>".date('h:i A', strtotime($row['time_out']))."</td>
                         </tr>
                       ";
                     }
+                     /* <td>".date('h:i A', strtotime($row['time_in'])).$status."</td> */
                   ?>
                 </tbody>
               </table>

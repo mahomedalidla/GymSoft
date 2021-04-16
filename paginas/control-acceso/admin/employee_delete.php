@@ -1,8 +1,8 @@
 <?php
 	include 'includes/session.php';
-
+ 
 	if(isset($_POST['delete'])){
-		$id = $_POST['id'];
+		$id = $_POST['empid'];
 		$sql = "DELETE FROM socios WHERE id_socio = '$id'";
 		if($conn->query($sql)){
 			$_SESSION['success'] = 'Socio eliminado con éxito';

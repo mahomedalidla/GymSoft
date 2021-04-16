@@ -56,7 +56,7 @@
             </div>
             
             
-            <div class="box-body">
+            <div class="box-body active in">
               <table id="example1" class="table table-bordered">
                 <thead>
                   <th>ID Socio</th>
@@ -131,7 +131,7 @@ $(function(){
   });
 
 });
-
+ 
 function getRow(id){
   $.ajax({
     type: 'POST',
@@ -140,11 +140,20 @@ function getRow(id){
     dataType: 'json',
     success: function(response){
       $('.empid').val(response.empid);
-      $('.employee_id').html(response.employee_id);
-      $('.del_employee_name').html(response.firstname+' '+response.lastname);
-      $('#employee_name').html(response.firstname+' '+response.lastname);
-      $('#edit_firstname').val(response.firstname);
+      $('.employee_id').html(response.id_socio);
+      /* EMPLEADONAME */
+      $('.del_employee_name').html(response.nombreSocio);
+      /* $('.del_employee_name').html(response.firstname+' '+response.lastname); */
+      $('#employee_name').html(response.nombreSocio);
+      // $('#edit_firstname').val(response.firstname);
+      $('#edit_firstname').val(response.nombreSocio);
       $('#edit_lastname').val(response.lastname);
+      $('#edit_telephone').val(response.telefono);
+      $('#edit_sexo').val(response.sexo);
+      $('#edit_membresia').val(response.tipoMembresia);
+      $('#edit_horario').val(response.id_horario);
+      $('#edit_nacimiento').val(response.fechaNacimiento);
+      $('#edit_position').val(response.position_id);
       $('#edit_address').val(response.address);
       $('#datepicker_edit').val(response.birthdate);
       $('#edit_contact').val(response.contact_info);
