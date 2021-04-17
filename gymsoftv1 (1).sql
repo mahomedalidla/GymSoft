@@ -7,6 +7,10 @@
 -- Versión del servidor: 10.4.17-MariaDB
 -- Versión de PHP: 8.0.0
 
+DROP DATABASE IF EXISTS gymSoftV1;
+CREATE DATABASE IF NOT EXISTS gymSoftV1;
+USE gymSoftV1; 
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
