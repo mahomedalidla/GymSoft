@@ -10,6 +10,7 @@
     	$telefono =  $_POST['telefono'];
     	$horario =  $_POST['id_horario'];
     	$fechaN = $_POST['fechaN'];
+		$fechaV = $_POST['fechaV'];
 		$posicion = $_POST['description'];
 		/*  */
 		// $empid = $_POST['id'];
@@ -23,7 +24,7 @@
 		// $schedule = $_POST['schedule'];
 		
 		// $sql = "UPDATE socios SET firstname = '$firstname', lastname = '$lastname', address = '$address', birthdate = '$birthdate', contact_info = '$contact', gender = '$gender', position_id = '$position', schedule_id = '$schedule' WHERE id = '$empid'";
-		$sql = "UPDATE socios SET nombreSocio = '$nombre', sexo = '$sexo', tipoMembresia = '$membresia', telefono = '$telefono', id_horario = '$horario', fechaNacimiento = '$fechaN', position_id = '$posicion' WHERE id_socio = '$empid'";
+		$sql = "UPDATE socios SET nombreSocio = '$nombre', sexo = '$sexo', tipoMembresia = '$membresia', telefono = '$telefono', id_horario = '$horario', fechaNacimiento = '$fechaN', fechafin = '$fechaV', position_id = '$posicion' WHERE id_socio = '$empid'";
 		if($conn->query($sql)){
 			$_SESSION['success'] = 'Socio actualizado con éxito';
 		}

@@ -152,6 +152,8 @@ function getRow(id){
       $('#edit_sexo').val(response.sexo);
       $('#edit_membresia').val(response.tipoMembresia);
       $('#edit_horario').val(response.id_horario);
+      $('#edit_fin').val(response.fechaFin);
+
       $('#edit_nacimiento').val(response.fechaNacimiento);
       $('#edit_position').val(response.position_id);
       $('#edit_address').val(response.address);

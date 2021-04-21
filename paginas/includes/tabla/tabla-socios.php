@@ -15,6 +15,7 @@ $socios = $sentencia->fetchAll(PDO::FETCH_OBJ);
 
 	<table>
 		<thead>
+		<a href="control-acceso/admin/employee.php" style="display: block; padding: 2%; text-align: end; color: green;">Renovar Socios</a>
 			<tr class = "table-header">
 				<!-- Imagenes -->
 				<th class = "table-img"></th>
@@ -24,7 +25,7 @@ $socios = $sentencia->fetchAll(PDO::FETCH_OBJ);
 				<th class = "table-member">Horario</th>
 				<th class = "table-exp">Fin de Membresía</th>
 				<!-- Botones de opciones -->
-				<th class = "table-buttons"></th> 
+				
 			</tr>
 		</thead>
 		<tbody>
@@ -69,7 +70,10 @@ $socios = $sentencia->fetchAll(PDO::FETCH_OBJ);
 						<td class = 'table-phone'>$telefono</td>
 						<td class = 'table-member'>$tipoMembresia</td>
 						<td class = 'table-member'>$entrada - $salida</td>
-						<td class = 'table-exp'>$fechaFin</td>";
+						<td class = 'table-exp'>$fechaFin</td>
+						
+						";
+						
 				}
 				
 			} 

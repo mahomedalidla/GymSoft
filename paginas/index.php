@@ -66,29 +66,14 @@
             </nav>
         </div>
         
-        <!-- Tarjetas -->
-        <div class="contenedor-tarjetas">
-            <div class="tarjeta-socios">
-                <h2>Nuevos socios!</h2>
-            </div>
-            <div class="tarjeta-ventas">
-                <h2>Ventas</h2>
-            </div>
-        </div>
+       
         <!-- Fin navegación -->
             <!--Sección de inicio-->
             <section class="seccion-inicio" id="inicio">
             
                 <div class="img-tarjeta-inicio">
-                    <h1>Muscle <span>Crew</span></h1>
-                    <img src="../imagenes/fonto2.png" alt="">
-                </div>
-                     
-                
-                <div class="img-contenedor">
-                <?php
-                        include('includes/to-do/to-do.php');
-                    ?>
+                     <h1>Bienvenido a Muscle <span>Crew</span></h1>
+                    <!-- <img src="../imagenes/fonto2.png" alt=""> -->
                 </div>
 
             </section>

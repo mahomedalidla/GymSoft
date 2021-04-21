@@ -192,6 +192,17 @@
                       </div>
                   	</div>
                 </div>
+
+                <!-- vencimiento -->
+                <div class="form-group">
+                  	<label for="edit_fin" class="col-sm-3 control-label">Fecha de fin</label>
+
+                  	<div class="col-sm-9"> 
+                      <div class="date">
+                        <input type="date" class="form-control" id="edit_fin" name="fechaV">
+                      </div>
+                  	</div>
+                </div>
                 
                 <div class="form-group">
                     <label for="edit_position" class="col-sm-3 control-label">Cargo</label>
