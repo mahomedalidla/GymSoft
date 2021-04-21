@@ -16,9 +16,6 @@
     <link rel="stylesheet" type="text/css" href="includes/sidebar/sidebar.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <!-- To-Do -->
-    <link rel="stylesheet" type="text/css" href="includes/to-do/to-do.css">
-    <script type="text/javascript" src="includes/to-do/to-do.js" defer></script>
 
     <script type="text/javascript" src="includes/sidebar/sidebar.js" defer></script>
 </head>
@@ -72,8 +69,7 @@
             <section class="seccion-inicio" id="inicio">
             
                 <div class="img-tarjeta-inicio">
-                     <h1>Bienvenido a Muscle <span>Crew</span></h1>
-                    <!-- <img src="../imagenes/fonto2.png" alt=""> -->
+                    <img src="../img-uploaded/mc.png" alt=""> 
                 </div>
 
             </section>
