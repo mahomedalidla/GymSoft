@@ -16,6 +16,8 @@
     <link rel="stylesheet" type="text/css" href="includes/sidebar/sidebar.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+    <link rel="icon" href="../imagenes/logo.png">
+
 
     <script type="text/javascript" src="includes/sidebar/sidebar.js" defer></script>
 </head>
