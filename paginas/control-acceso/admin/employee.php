@@ -73,20 +73,24 @@
                     $query = $conn->query($sql);
                     $urlImagenBasica = "../img-uploaded/default.png";
 
+                    $fechaActual = date('Y-m-d');
 
                     while($row = $query->fetch_assoc()){
                       if($row['fotoSocio'] == null) {
                         $row['fotoSocio'] = $urlImagenBasica;
                        }
+                       
+                      $status = ( $row['fechaFin'] >= $fechaActual )?'<span class="label label-success pull-right">Activo</span>':'<span class="label label-danger pull-right">Vencido</span>';
+                       
                       ?>
                         <tr>
                           <td><?php echo $row['empid']; ?></td>
                           
-                          <td><img src="../../<?php echo $row['fotoSocio']; ?>" width="40px" height="30px"> <a href="#edit_photo" data-toggle="modal" class="pull-right photo" data-id=""><span class="fa fa-edit"></span></a></td>
+                          <td><img src="../../<?php echo $row['fotoSocio']; ?>" width="40px" height="30px"></a></td>
                           <td><?php echo $row['nombreSocio']; ?></td>
                           <td><?php echo $row['description']; ?></td>
                           <td><?php echo date('h:i A', strtotime($row['time_in'])).' - '.date('h:i A', strtotime($row['time_out'])); ?></td>
-                          <td><?php echo date('M d, Y', strtotime($row['fechaFin'])) ?></td>
+                          <td><?php echo date('M d, Y', strtotime($row['fechaFin'])).$status ?></td>
                           <td>
                             <button class="btn btn-success btn-sm edit btn-flat" data-id="<?php echo $row['empid']; ?>"><i class="fa fa-edit"></i> Editar</button>
                             <button class="btn btn-danger btn-sm delete btn-flat" data-id="<?php echo $row['empid']; ?>"><i class="fa fa-trash"></i> Eliminar</button>

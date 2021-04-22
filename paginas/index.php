@@ -69,7 +69,7 @@
             <section class="seccion-inicio" id="inicio">
             
                 <div class="img-tarjeta-inicio">
-                    <img src="../img-uploaded/mc.png" alt=""> 
+                    <img src="../img-uploaded/mc-01.png" alt=""> 
                 </div>
 
             </section>

@@ -18,7 +18,7 @@
 
 	}
 	else{
-		$_SESSION['error'] = 'Select employee to update photo first';
+		$_SESSION['error'] = 'Select socio to update photo first';
 	}
 
 	header('location: employee.php');

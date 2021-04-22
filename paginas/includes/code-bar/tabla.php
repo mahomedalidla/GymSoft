@@ -30,8 +30,8 @@ $arrayCodigos=array();
 				<tr>
 					<td><?php echo $ver[1] ?></td>
 					<td>
-						<svg id='<?php echo "barcode".$ver[0]; ?>'>
-						<!-- <img id='<?php echo "barcode".$ver[0]; ?>'> -->
+					<svg id='<?php echo "barcode".$ver[0]; ?>'>
+					 <!-- <img style="border-radius: 0; height: 35%; width: 35%;" id='<?php echo "barcode".$ver[0]; ?>'> -->
 						</td>
 					</tr>
 				<?php endwhile; ?> 

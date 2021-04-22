@@ -10,7 +10,7 @@
 
 		$sql = "UPDATE schedules SET time_in = '$time_in', time_out = '$time_out' WHERE id = '$id'";
 		if($conn->query($sql)){
-			$_SESSION['success'] = 'Schedule updated successfully';
+			$_SESSION['success'] = 'Horario Actualizado';
 		}
 		else{
 			$_SESSION['error'] = $conn->error;

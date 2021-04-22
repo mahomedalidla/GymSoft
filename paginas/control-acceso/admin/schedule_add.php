@@ -11,7 +11,7 @@
 
 		$sql = "INSERT INTO schedules (time_in, time_out) VALUES ('$time_in', '$time_out')";
 		if($conn->query($sql)){
-			$_SESSION['success'] = 'Schedule added successfully';
+			$_SESSION['success'] = 'Horario agregado';
 		}
 		else{
 			$_SESSION['error'] = $conn->error;
