@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c9b8e84b-8e70-4868-b7cf-df1ab030bd46" name="muscle" url="https://muscle.cimeira.edu.mx">
+        <fileTransfer rootFolder="/home/mahomedalid/muscle" accessType="SFTP" host="74.208.160.210" port="22" sshConfigId="ae79c304-8cd9-41ae-8d6a-b77f965fa573" sshConfig="mahomedalid@74.208.160.210:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,85 @@
+* {
+	align-items: center;
+}
+
+body {
+	min-height: 90vh;
+	min-width: 10vh;
+}
+
+table {
+	margin: auto;
+}
+
+img{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	padding-top: 4px;
+}
+
+/*Encabezados*/
+th {
+ 	padding: 20px 20px 20px 20px;
+ 	font-size: 18px;
+ 	text-align: left;
+ 	background-color: #362f4b;
+ 	color: white;
+ 	font-weight: bold;
+}
+
+/*Esquina superior izquierda de encabezado*/
+th:first-child{
+	border-top-left-radius: 10px;
+}
+
+/*Esquina superior derecha de encabezado*/
+th:last-child{
+	border-top-right-radius: 10px;
+}
+
+/*Esquina inferior izquierda de última fila*/
+tr:last-child td:first-child{
+	border-bottom-left-radius: 10px;
+}
+
+/*Esquina inferior derecha de última fila*/
+tr:last-child td:last-child{
+	border-bottom-right-radius: 10px;
+}
+
+/*Uno sí uno no*/
+tr:nth-child(even){
+	background: #F1F1F1;
+}
+
+/*Celdas*/
+td{
+	text-align: left;
+	font-size: 18px;
+	color: #777777;
+	padding: 15px 15px 15px 15px;
+	font-weight: lighter;
+}
+
+tr:hover{
+	background-color: #70707048;
+}
+
+table{
+	border-radius: 10px;
+	border-spacing: 0px;
+	background-color: white;
+	font-family: "Lato", sans-serif;
+}
+
+.edit-button{
+	color: #61b8ff;
+	padding: 5px;
+}
+
+.delete-button{
+	color: #ff6161;
+	padding: 5px;
+}
+

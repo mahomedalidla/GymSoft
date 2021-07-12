@@ -1,0 +1,27 @@
+
+body{
+	
+	background: white;
+}
+
+.seccion-inicio {
+    /* background-image: url("../imagenes/fondo.png"); */
+    background: rgb(255, 255, 255);
+    min-height: 75vh;
+    padding: 0 5% 5% 5%;    
+    /* padding-top: 1%; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    align-content: center;
+}
+
+.col-xs-12 {
+	background: white;
+	padding-top: 0%;
+	min-height: 100vh;
+}
+
+.col-xs-12 h1 {
+	font-size: 3rem;
+}

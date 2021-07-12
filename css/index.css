@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@700&family=Montserrat:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: white;
+    --primary-color: #535353;
+    --secondary-color: #cacaca;
+    --tertiary-color: #a7a7a7;
+    --fourth-color: #486581;
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1E9B50;
+}
+/* Carrito */
+
+
+.carrito-boton {
+    width: 40px;
+    background: #42929d;
+    border: 3px solid white;
+    border-radius: 50%;
+    position: fixed;
+    top: 8%;
+    left: 5%;
+    z-index: 15;
+    box-shadow: 0 0 5px gray;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.carrito-boton:hover {
+    background: #E08E79;
+}
+
+.carrito-fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 12;
+    background: rgba(255, 255, 255, 0.8);
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+}
+
+.carrito-ventana {
+    width: 400px;
+    background: #42929d;
+    border: 3px solid #21575e;
+    padding: 10px;
+}
+
+.carrito-ventana .titulo {
+    color: white;
+    font-family: "Patua One", serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.carrito-ventana .encabezado-detalle, 
+.carrito-ventana .total {
+    color: white;
+    font-family: "Balsamiq Sans", sans-serif;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.carrito-ventana .total {
+    border-bottom: none;
+    border-top: 1px solid white;
+}
+
+.renglon .precio, 
+.total .precio-total {
+    text-align: right;
+}
+
+.encabezado-detalle .columna-precio {
+    text-align: center;
+}
+
+.productos .renglon {
+    color: white;
+    font-family: "Balsamiq Sans", sans-serif;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    margin-bottom: 10px;
+}
+
+.carrito-ventana .renglon .boton-quitar {
+    color: #42929d;
+    font-family: "Balsamiq Sans", sans-serif;
+    background: #F4F4E1;
+    border: none;
+    cursor: pointer;
+    transition: background 0.5s;
+    margin-left: 5px;
+}
+
+.carrito-ventana .renglon .boton-quitar:hover {
+    background: #E08E79;
+    color: white;
+}
+
+.carrito-ventana .boton-compra {
+    width: 100%;
+}
+
+.carrito-ventana .boton-compra:hover {
+    background: #F4F4E1;
+    color: #42929D;
+}
+
+/* ------------- MENÚ INICIAL ----------------- */
+.nav-contenedor { /* Menu */
+    width: 100%;
+    position: sticky;
+    color: black;
+    background: rgb(255, 255, 255);    
+    top: 0;
+    z-index: 10;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    padding: 1%;
+}
+
+nav {
+    width: 90%;
+    height: 7vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hola {
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: x-large;
+}
+
+.usuario {
+    color: black;
+    font-family: "Alef", sans-serif;
+    font-size: x-large;
+}
+
+.logo {
+    display: flex;  
+    align-items: center;
+}
+
+.logo img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.logo h2 {
+    font-family: "IBM Plex Sans", serif;
+    color: gray;
+    font-size: 1.5vw;
+}
+
+#menu-boton {
+    display: none;
+    color: black;
+    cursor: pointer;        
+    transition: color 0.3s;
+}
+
+#menu-boton:hover {
+    color: var(--fourth-color);
+}
+
+#menu { 
+    font-family: "IBM Plex Sans", serif;
+    font-size: 1.5vw;
+    font-weight: bold;
+    list-style: none;    
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+}
+
+#menu li {
+    text-align: center;
+    cursor: pointer;
+    padding-left: 2rem;
+    font-size: 1vw; /* tama;o de font */
+}
+
+#menu li a:hover {
+    color: var(--fourth-color);    
+}
+
+#menu li a {
+    text-decoration: none;
+    color: gray;    
+    transition: color 0.5s;
+}
+
+/* ------------- FIN MENÚ INICIAL ----------------- */
+
+
+/* ------------- SECCIÓN INICIO ----------------- */
+
+.contenedor-tarjetas {
+    background-color: white;
+    display: flex;
+    gap: 75px;
+    padding: 2%;
+    padding-left: 6%;
+}
+
+.tarjeta-socios {
+    background: #B1ECFF;
+    width: 30vh;
+    height: 12vh;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 25px;
+}
+
+.tarjeta-ventas {
+    background: #C6F3B5;
+    width: 30vh;
+    height: 12vh;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 5px;
+}
+
+.contenedor-tarjetas, h1 {
+    text-align: center;
+    color:rgb(32, 32, 32);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 1rem;
+}
+/* fin tarjetas */
+
+.seccion-inicio {
+    /* background-image: url("../imagenes/fondo.png"); */
+    background: rgb(255, 255, 255);
+    min-height: 75vh;
+    padding: 0 5% 5% 5%;    
+    /* padding-top: 1%; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    align-content: center;
+} 
+/* pp */
+.img-tarjeta-inicio {
+    /* border: 5px solid #FFFFFF; */
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);    
+    padding: 3%;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.img-tarjeta-inicio img {
+    width: 40%;
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin: auto;
+}
+
+.img-tarjeta-inicio h1 {
+    font-family: "IBM Plex Sans", serif;
+    font-size: xx-large;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
+    color: var(--secondary-color);
+}
+
+.img-tarjeta-inicio span {
+    color: #1E9B50;
+}
+
+/* pp */
+/* .tarjeta-inicio {
+    background-image: url(../imagenes/fonto2.png);
+    border: 5px solid #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
+    padding: 3%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+
+.tarjeta-inicio h1 {
+    font-family: "IBM Plex Sans", serif;
+    font-size: xx-large;
+    color: var(--fourth-color);
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
+}
+
+.tarjeta-inicio h1 span {
+    color: var(--secondary-color);
+}
+
+.tarjeta-inicio p {
+    font-family: "Montserrat", serif;
+    font-size: 1.6rem;
+    text-align: center;
+} */
+
+.boton {
+    background: var(--primary-color);
+    font-family: "Montserrat", serif;
+    font-size: 1.2rem;
+    color: white;
+    display: block;    
+    padding: 16px 0 16px 0;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+a.boton {
+    text-decoration: none;
+    text-align: center;
+}
+
+.boton a {
+    text-decoration: none;
+    color: white;
+}
+
+.boton:hover {
+    background: var(--secondary-color);
+}
+
+.img-contenedor {
+    height: 60vh;
+    border: 5px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+.carrusel {
+    height: 100%;
+    width: 500%;
+    display: flex;
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: left 0.3s;    
+}
+
+.carrusel img{
+    object-fit: cover;
+    height: 100%;
+    width: 20%;
+}
+
+.contenedor-nav-img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(108, 102, 102, 0.67);
+}
+
+.navegador-img {
+    display: flex;
+    list-style: none;
+    color: white;    
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+.navegador-img li {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+    
+.navegador-img li:hover {
+    color: black;
+}
+
+/* ------------- FIN SECCIÓN INICIO ----------------- */
+
+/* ------------- PIE DE PÁGINA ----------------- */
+
+footer {
+    
+    background: white;
+    color: gray;
+    font-family: "Montserrat", serif;
+    font-size: 1rem;
+    border-top: 1px solid gray;
+}
+
+footer .columnas-pie {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer .contacto, footer .redes, footer .general {
+    padding: 1vw;
+    flex: 1 1 300px;
+    text-align: center; 
+}
+
+footer .derechos {
+    background: rgb(243, 243, 243);
+    color: black;
+    text-align: center;
+    padding: 1.5vh;
+}
+
+/* ------------- FIN PIE DE PÁGINA ----------------- */
+
+
+/* --------------------- MEDIA QUERIES -------------------- */
+
+@media (max-width:800px) {
+
+    #menu-boton {
+        display: block;
+    }
+    
+    #menu {
+        background: var(--secondary-color);    
+        font-family: "Montserrat", serif;
+        list-style: none;
+        color: white;
+        text-transform: uppercase;
+        position: fixed;
+        width: 100vw;
+        height: 95vh;
+        z-index: 9;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 8vh;
+        transition: left 0.5s;        
+        left: 100%;
+        top: 7vh;        
+    }
+
+    #menu li {
+        font-size: 1rem;
+    }
+}
