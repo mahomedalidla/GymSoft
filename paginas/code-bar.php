@@ -60,9 +60,11 @@
         </div>
         <!-- Fin navegación -->
 
-
-<div class="seccion-inicio">
-    <?php include('includes/code-bar/codeBar.php');?>
+<div class="table table-responsive"  style="padding: 3% 5% 10% 5%; background-color:#ffffff;" style="background-color:#ffffff;">
+    <div class="seccion-inicio" >
+        <?php include('includes/code-bar/codeBar.php');?>
+    </div>
 </div>
+
 
   

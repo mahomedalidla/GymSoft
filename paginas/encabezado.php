@@ -33,6 +33,8 @@
     <script src="../scripts/menu.js" defer></script>  
     <script src="../scripts/carrito.js" defer></script>
 
+
+
     
 </head>
 <script type="text/javascript">

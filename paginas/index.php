@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muscle Crew</title>
+    <title>Muscle Crew - Inicio</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&family=Pacifico&family=Patua+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" type="text/css" href="includes/sidebar/sidebar.css">
@@ -39,13 +39,9 @@
                     ?>
                 </div>
                 <div id="clockdate">
-				<div class="clockdate-wrapper">
-					<div id="clock"></div>
-					<div id="date"><?php echo date('l, F j, Y'); ?></div>
-				</div>
 			</div>
 
-                <h2 id="menu-boton">&#9776;</h2>
+
                 <ul id="menu">
 
                     <?php 
@@ -71,7 +67,7 @@
             <section class="seccion-inicio" id="inicio">
             
                 <div class="img-tarjeta-inicio">
-                    <img src="../img-uploaded/mc-01.png" alt=""> 
+                    <img src="../img-uploaded/mc-01.png" alt="Imagen Muscle Crew">
                 </div>
 
             </section>

@@ -1,9 +1,11 @@
 <?php session_start(); ?>
 <?php include 'header.php'; ?>
+
 <body class="hold-transition login-page" style=" background: #1E9B50;">
 <div class="login-box">
 <h1 style="text-align: center;" >Muscle Crew</h1>
   	<div class="login-logo">
+
   		<p id="date"></p>
       <p id="time" class="bold"></p>
   	</div>
@@ -29,17 +31,24 @@
       		</div>
     	</form>
   	</div>
-		<div class="alert alert-success alert-dismissible mt20 text-center" style="display:none;">
+
+    <div class="alert alert-success alert-dismissible mt20 text-center" style="display:none;">
       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
       <span class="result"><i class="icon fa fa-check"></i> <span class="message"></span></span>
     </div>
-		<div class="alert alert-danger alert-dismissible mt20 text-center" style="display:none;">
+
+    <div class="alert alert-warning alert-dismissible mt20 text-center" style="display:none;">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <span class="result"><i class="icon fa fa-check"></i> <span class="message2"></span></span>
+    </div>
+
+    <div class="alert alert-danger alert-dismissible mt20 text-center" style="display:none;">
       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
       <span class="result"><i class="icon fa fa-warning"></i> <span class="message"></span></span>
     </div>
   		
 </div>
-	
+
 <?php include 'scripts.php' ?>
 <script type="text/javascript">
 $(function() {
@@ -66,7 +75,9 @@ $(function() {
         else{
           $('.alert').hide();
           $('.alert-success').show();
+          $('.alert-warning').show();
           $('.message').html(response.message);
+          $('.message2').html(response.message2);
           $('#employee').val('');
         }
       }

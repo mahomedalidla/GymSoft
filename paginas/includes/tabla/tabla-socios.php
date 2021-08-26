@@ -10,10 +10,12 @@ $socios = $sentencia->fetchAll(PDO::FETCH_OBJ);
 <head>
 	<title>Ay no sé</title>
 	<link href="tabla-socios.css" rel="stylesheet" type="text/css" />
+
+
 </head>
 <body>
 
-	<table>
+	<table class="table table-responsive">
 		<thead>
 		<a href="control-acceso/admin/employee.php" style="display: block; padding: 2%; text-align: end; color: green;">Renovar Socios</a>
 			<tr class = "table-header">

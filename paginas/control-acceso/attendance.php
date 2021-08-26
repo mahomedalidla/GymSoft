@@ -36,7 +36,8 @@
 					$sql = "INSERT INTO attendance (socio_id, date, time_in, status) VALUES ('$id', '$date_now', NOW(), '$logstatus')";
 					
 					if($conn->query($sql)){
-						$output['message'] = 'Llegada: '.$row['nombreSocio'];
+                        $output['message'] = 'Llegada: '.$row['nombreSocio'];
+                        $output['message2'] = 'Fecha de vencimiento: '.$row['fechaFin'];
 					}
 					else{
 						$output['error'] = true;

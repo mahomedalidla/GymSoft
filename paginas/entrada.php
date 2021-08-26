@@ -39,7 +39,7 @@ include('includes/encabezado.php');
 ?>
 <!-- Fin prueba --> 
 
-<div class="formulario-div">
+<div class="container formulario-div ">
 <h3>Datos</h3>
     <form action="entrar-manejo.php" method="post">
         

@@ -12,7 +12,7 @@
 .formulario-div {
     /* background-image: url(../imagenes/fondo.png); */
     background: var(--bg-color);
-    min-height: 80vh;
+
     display: grid;
     place-items: center;
     padding: 30px;   
@@ -102,4 +102,102 @@ a.boton {
     padding: 0 0 2% 0;
     color: black;
     font-weight: bold;
+}
+
+@media (max-width:800px) {
+    .formulario-div {
+        /* background-image: url(../imagenes/fondo.png); */
+        background: var(--bg-color);
+
+        display: grid;
+        place-items: center;
+        padding: 30px;
+    }
+
+    .formulario-div form {
+        width: 200px;
+        min-height: 40vh;
+        background: #E4E4E4;
+        /* border: 5px solid white; */
+        padding: 3%;
+        font-family: "Montserrat", serif;
+        font-size: 1.5rem;
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.349);
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 40px;
+
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-gap: 10px;
+
+    }
+
+    input[type=text], input[type=date], input[type=email], input[type=password], input[type=number], input[type=file], textarea, select {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-size: 1.5rem;
+        margin: 0.5rem 0 0.5rem 0;
+        border: 0;
+        background: #fff;
+        border-radius: 5px;
+        outline: none;
+
+    }
+
+    label {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: bolder;
+        color: #6F7482;
+        padding-top: 3%;
+        padding-right: 5%;
+        text-align: right;
+    }
+
+    .formulario-div h3 {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: bolder;
+        text-align: center;
+        color: #42929f;
+        text-transform: uppercase;
+        border-bottom: 1px solid #42929f;
+    }
+
+
+    .boton {
+        background: var(--primary-color);
+        font-family: "Montserrat", serif;
+        font-size: 1.2rem;
+        color: white;
+        display: block;
+        padding: 16px 0 16px 0;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s;
+        border: 2px solid black ;
+        width: 8em;
+    }
+
+    a.boton {
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .boton a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .boton:hover {
+        background: var(--secondary-color);
+    }
+
+    .header-form {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: bold;
+        padding: 0 0 2% 0;
+        color: black;
+        font-weight: bold;
+    }
+
 }
