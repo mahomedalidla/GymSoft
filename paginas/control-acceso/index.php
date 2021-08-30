@@ -3,6 +3,7 @@
 
 <body class="hold-transition login-page" style=" background: #1E9B50;">
 <div class="login-box">
+
 <h1 style="text-align: center;" >Muscle Crew</h1>
   	<div class="login-logo">
 
@@ -21,7 +22,7 @@
             </select>
           </div>
       		<div class="form-group has-feedback">
-        		<input type="text" class="form-control input-lg" id="employee" name="employee" required>
+        		<input type="text" autofocus="autofocus" class="form-control input-lg" id="employee" name="employee" required>
         		<span class="glyphicon glyphicon-calendar form-control-feedback"></span>
       		</div>
       		<div class="row">
@@ -32,19 +33,24 @@
     	</form>
   	</div>
 
-    <div class="alert alert-success alert-dismissible mt20 text-center" style="display:none;">
+    <div class="alert alert-success alert-dismissible mt15 text-center" style="display:none;">
       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
       <span class="result"><i class="icon fa fa-check"></i> <span class="message"></span></span>
     </div>
 
-    <div class="alert alert-warning alert-dismissible mt20 text-center" style="display:none;">
+    <div class="alert alert-warning alert-dismissible mt15 text-center" style="display:none;">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-        <span class="result"><i class="icon fa fa-check"></i> <span class="message2"></span></span>
+        <span class="result"><i class="icon fa fa-info"></i> <span class="message2"></span></span>
     </div>
 
-    <div class="alert alert-danger alert-dismissible mt20 text-center" style="display:none;">
+    <div class="alert alert-danger alert-dismissible mt15 text-center" style="display:none;">
       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-      <span class="result"><i class="icon fa fa-warning"></i> <span class="message"></span></span>
+      <span class="result"><i class="icon fa fa-exclamation-triangle"></i> <span class="message"></span></span>
+    </div>
+
+    <div class="alert alert-info alert-dismissible mt15 text-center" style="display:none;">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <span class="result"><i class="icon fa fa-id-card-o"></i> <span class="message3"></span></span>
     </div>
   		
 </div>
@@ -67,18 +73,50 @@ $(function() {
       data: attendance,
       dataType: 'json',
       success: function(response){
-        if(response.error){
+
           $('.alert').hide();
+
+        if(response.error){
+
           $('.alert-danger').show();
+
+          window.setTimeout(function() {
+                $(".alert-danger").slideUp(500, function(){
+                    $(this).hide();
+                  //  $style="display:none;
+                });
+            }, 3000);
           $('.message').html(response.message);
+
         }
         else{
           $('.alert').hide();
-          $('.alert-success').show();
-          $('.alert-warning').show();
+
+
           $('.message').html(response.message);
           $('.message2').html(response.message2);
+          $('.message3').html(response.message3);
           $('#employee').val('');
+            //
+            $('.alert-success').show();
+            $('.alert-warning').show();
+            $('.alert-info').show();
+            window.setTimeout(function() {
+
+                $(".alert-success").slideUp(500, function(){
+                    $(this).hide();
+                });
+                $(".alert-warning").slideUp(500, function(){
+                    //
+                    $(this).hide();
+                });
+                $(".alert-info").slideUp(500, function(){
+                    $(this).hide();
+                });
+
+            }, 5000);
+
+            //
         }
       }
     });

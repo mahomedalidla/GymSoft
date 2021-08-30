@@ -34,10 +34,19 @@
 					$logstatus = ($lognow > $srow['time_in']) ? 0 : 1;
 					//
 					$sql = "INSERT INTO attendance (socio_id, date, time_in, status) VALUES ('$id', '$date_now', NOW(), '$logstatus')";
-					
+
+
+
+
 					if($conn->query($sql)){
                         $output['message'] = 'Llegada: '.$row['nombreSocio'];
                         $output['message2'] = 'Fecha de vencimiento: '.$row['fechaFin'];
+                        $sql = "SELECT *, socios.id_socio AS empid FROM socios 
+                                LEFT JOIN position ON position.id=socios.position_id 
+                                LEFT JOIN schedules ON schedules.id=socios.id_horario";
+                        $squery = $conn->query($sql);
+                        $fechaActual = date('Y-m-d');
+                        $output['message3']= ($row['fechaFin'] >= $fechaActual )?'Estatus: '.'<span class="label label-success pull-right">Activo</span>':'Estatus: '.'<span class="label label-danger pull-right">Vencido</span>';
 					}
 					else{
 						$output['error'] = true;
